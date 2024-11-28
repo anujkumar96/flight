@@ -1,0 +1,60 @@
+img{   
+    height:50vw;
+width:35vw;
+padding:0 5vw;
+}
+.domestic{
+    text-align:center;
+color:brown;
+    padding: 2vw 0 0 0;
+}
+.image{
+    background-image: url("/assets/images/special-offer-banner.jpg");
+    height: 13.6vw;
+    width:34vw;
+
+}
+ul li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container{
+    display: flex;
+    gap:1vw;
+    justify-content: space-around;
+}
+.schemes
+{
+    display: flex;
+    flex-direction: column;
+    font-size:.9vw;
+         color:aliceblue;
+         background-color:#c32026;
+         line-height: 1.5vw;
+         margin:4vw 0 0 0;
+         padding: .5vw 0 .5vw 2vw;
+         border-radius: .4vw;
+           }
+.image-heading{
+    margin:5vw 0 1vw 0;
+    font-size: 1.6vw;
+}
+.call{
+    display: flex;
+    flex-direction: column;
+    font-size:.9vw;
+         color:aliceblue;
+         background-color:#c32026;
+        
+         margin:7vw 0 0 0;
+         padding: .5vw 0 .5vw 2vw;
+         border-radius: .4vw;
+}
+h3{
+    line-height: 1.5vw;
+}
+h3{
+    line-height:1.5vw;
+    font-size:1.3vw;
+}

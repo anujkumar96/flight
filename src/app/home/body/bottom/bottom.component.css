@@ -1,0 +1,25 @@
+
+.image{
+    background-image: url("/assets/images/fly-non-stop.jpg");
+    height:26vw;
+   background-size: cover;
+   }
+
+   .text{
+       color: aliceblue;
+       font-family:Montserrat, sans-serif  ; 
+    }
+   .heading{
+       position:absolute;
+       top:45vw;
+       left:10vw;
+       font-size: 5vw;
+       line-height: 5vw;
+   }
+   .para{
+    position:absolute;
+    top:56vw;
+    left:10vw;
+       font-size:1.5vw;
+       line-height: 2vw;
+   }

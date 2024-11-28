@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right{
+margin-top: 2vw; 
+}
+.center{
+margin-top: 3vw;  
+
+}
+
+.hr{
+    height: 2.2vw;
+    background-image: linear-gradient(to right, red , #f5891e);
+}
+.socialmedia{
+margin:5vw 0;
+}
+.footers{
+    display: flex;
+    
+}

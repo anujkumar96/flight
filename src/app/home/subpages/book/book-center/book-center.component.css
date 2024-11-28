@@ -1,0 +1,16 @@
+.container{
+    display:flex;
+
+}
+.w-30{
+    height:20vw;
+    width:20vw;
+}
+.carousel{
+    width:60vw;
+    margin:auto;
+    padding-bottom:2vw;
+}
+.space{
+   margin:1vw;
+}

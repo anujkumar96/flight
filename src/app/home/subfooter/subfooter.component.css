@@ -1,0 +1,22 @@
+.container{
+    display:flex;
+   justify-content:space-around;
+   margin: 2vw 0 4vw 8vw;
+
+}
+
+.container2{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin: 2vw;
+    align-self: center;
+    align-content: center;
+  
+}
+.subheading{
+       align-self: center;
+       margin: 2vw 0;
+       color:#ed1c3f;
+       font-size: 2vw;
+   }

@@ -1,0 +1,60 @@
+    <div class="d-flex gap">
+      <button class="mat-button btn-primary col" routerLink="/home">Back</button>
+      <button class="mat-button btn-primary col" (click)=" userLogin()">Previous Bookings</button>
+    </div>
+<div class="margin d-flex justify-content-center align-items-center form-style">
+  <form [formGroup]="book" (ngSubmit)="bookticket()" class="form">
+
+    <input
+      type="text"
+  
+      placeholder="From"
+      id="from"
+      class="from"
+      name="from"
+      formControlName="from"
+    /> <span>
+
+    <input
+      type="text"
+      class="form-control"
+      placeholder="To"
+      id="to"
+      class="to"
+      name="to"
+      formControlName="to"
+    /></span>
+
+    <input
+      type="date"
+      class="depart"
+      placeholder="Departing"
+      min="{{ minDate }}"
+      name="depart"
+      formControlName="depart"
+    />
+   
+    <select class="select">
+      <option>Economy</option>
+      <option>Business</option>
+      <option>First</option>
+    </select>
+
+    <select class="select">
+      <option>Concessionary Type</option>
+      <option>Armed Forces</option>
+      <option>Bravery Awardee</option>
+      <option>Paramilitary Force</option>
+      <option>Reserve Engineer</option>
+      <option>Student</option>
+      <option>Senior Citizen</option>
+      <option>Ward Widow</option>
+      <option>War Disabled Soldier</option>
+    </select>
+    <br>
+    <button
+      type="submit"
+      class="btn btn-primary me-5 submit"
+      [disabled]="!book.valid" routerLink="bookticket()">Search</button>
+  </form>
+</div>

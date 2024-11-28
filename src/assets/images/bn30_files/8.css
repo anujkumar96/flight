@@ -1,0 +1,2126 @@
+/* ******** Index Slider ******** */
+
+.indexBanner {
+    position: relative
+}
+
+    .indexBanner .sliderBanner .item {
+        height: auto;
+    }
+
+.noJS .indexBanner {
+    height: 640px;
+    overflow: hidden
+}
+/********** Owl Carousel **********/
+
+.owl-carousel .animated {
+    -webkit-animation-duration: 1000ms;
+    animation-duration: 1000ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.under-maintenance {
+  top:150px;
+    cursor: default;
+    display: none;
+    position: absolute;
+    z-index: 2147483647 !important;
+  top:100px;
+    font-size: 0.72em;
+   
+    left: 450px;
+}
+
+
+.owl-carousel .owl-animated-in {
+    z-index: 0;
+}
+
+.owl-carousel .owl-animated-out {
+    z-index: 1;
+}
+
+.owl-carousel .fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+
+.owl-height {
+    -webkit-transition: height 500ms ease-in-out;
+    -moz-transition: height 500ms ease-in-out;
+    -ms-transition: height 500ms ease-in-out;
+    -o-transition: height 500ms ease-in-out;
+    transition: height 500ms ease-in-out;
+}
+
+.owl-carousel {
+    display: none;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent; /* position relative and z-index fix webkit rendering fonts issue */
+    position: relative;
+    z-index: 1;
+}
+
+    .owl-carousel .owl-stage {
+        position: relative;
+        -ms-touch-action: pan-Y;
+    }
+
+        .owl-carousel .owl-stage:after {
+            content: ".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: 0;
+        }
+
+    .owl-carousel .owl-stage-outer {
+        position: relative;
+        overflow: hidden; /* fix for flashing background */
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+
+    .owl-carousel.owl-loaded {
+        display: block;
+    }
+
+    .owl-carousel.owl-loading {
+        opacity: 0;
+        display: block;
+    }
+
+    .owl-carousel.owl-hidden {
+        opacity: 0;
+    }
+
+    .owl-carousel .owl-refresh .owl-item {
+        display: none;
+    }
+
+    .owl-carousel .owl-item {
+        position: relative;
+        min-height: 1px;
+        float: left;
+    }
+
+        .owl-carousel .owl-item img {
+            display: block;
+            width: 100%;
+            -webkit-transform-style: preserve-3d;
+        }
+
+    .owl-carousel .owl-grab {
+        cursor: move;
+    }
+
+    .owl-carousel.owl-rtl {
+        direction: rtl;
+    }
+
+        .owl-carousel.owl-rtl .owl-item {
+            float: right;
+        }
+
+    .owl-carousel .owl-item .owl-lazy {
+        opacity: 0;
+        -webkit-transition: opacity 400ms ease;
+        -moz-transition: opacity 400ms ease;
+        -ms-transition: opacity 400ms ease;
+        -o-transition: opacity 400ms ease;
+        transition: opacity 400ms ease;
+    }
+
+    .owl-carousel .owl-item img {
+        transform-style: preserve-3d;
+    }
+
+    .owl-carousel .owl-video-wrapper {
+        position: relative;
+        height: 100%;
+        background: #000;
+    }
+
+    .owl-carousel .owl-video-play-icon {
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        left: 50%;
+        top: 50%;
+        margin-left: -40px;
+        margin-top: -40px;
+        background: url("owl.video.play.png") no-repeat;
+        cursor: pointer;
+        z-index: 1;
+        -webkit-backface-visibility: hidden;
+        -webkit-transition: scale 100ms ease;
+        -moz-transition: scale 100ms ease;
+        -ms-transition: scale 100ms ease;
+        -o-transition: scale 100ms ease;
+        transition: scale 100ms ease;
+    }
+
+    .owl-carousel .owl-video-playing .owl-video-tn, .owl-carousel .owl-video-playing .owl-video-play-icon {
+        display: none;
+    }
+
+    .owl-carousel .owl-video-tn {
+        opacity: 0;
+        height: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+        -webkit-transition: opacity 400ms ease;
+        -moz-transition: opacity 400ms ease;
+        -ms-transition: opacity 400ms ease;
+        -o-transition: opacity 400ms ease;
+        transition: opacity 400ms ease;
+    }
+
+    .owl-carousel .owl-video-frame {
+        position: relative;
+        z-index: 1;
+    }
+
+.owlCarousel .item {
+    text-align: center;
+    height: 305px;
+    line-height: 305px;
+}
+
+.owl-theme .owl-controls {
+    margin-top: 10px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent
+}
+    /*.owl-theme .owl-controls .owl-nav [class*=owl-]{color:#fff;font-size:14px;margin:5px;padding:4px 7px;background:#d6d6d6;display:inline-block;cursor:pointer;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px} */ /*.owl-theme .owl-controls .owl-nav [class*=owl-]:hover{background:#869791;color:#fff;text-decoration:none}*/
+
+    .owl-theme .owl-controls .owl-nav .disabled {
+        opacity: .5;
+        cursor: default
+    }
+
+.owl-theme .owl-dots .owl-dot, .noJS .owl-dots .owl-dot {
+    display: inline-block;
+    display: none;
+}
+
+    .owl-theme .owl-dots .owl-dot span, .noJS .owl-dots .owl-dot a {
+        width: 10px;
+        height: 10px;
+        margin: 5px 7px;
+        background: #d6d6d6;
+        display: block;
+        -webkit-backface-visibility: visible;
+        -webkit-transition: opacity 200ms ease;
+        -moz-transition: opacity 200ms ease;
+        -ms-transition: opacity 200ms ease;
+        -o-transition: opacity 200ms ease;
+        transition: opacity 200ms ease;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span, .noJS .owl-dots .owl-dot.active a {
+        background: #869791
+    }
+
+.noScript {
+    display: none;
+}
+
+.no-js .owl-carousel {
+    display: block;
+}
+
+.noJS .owl-controls {
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    width: 100%;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent
+}
+
+    .noJS .owl-controls.noScript {
+        display: block;
+    }
+
+.noJS .sliderBanner .item {
+    position: relative;
+}
+
+.noJS .carouselBlock {
+    margin-right: -10px;
+}
+
+    .noJS .carouselBlock .item {
+        width: 615px;
+        margin: 0 10px 10px 0;
+        float: left;
+    }
+/*==========================================================================================================================*/ /*================================================ Main CSS Theme Start ====================================================*/ /*==========================================================================================================================*/ /********** Layout **********/
+
+@font-face {
+    font-family: 'Geometric415BT-LiteA';
+    src: url('../../../fonts/Geometric415BT-LiteA.eot');
+    src: url('../../../fonts/Geometric415BT-LiteA.eot?#iefix') format('embedded-opentype'), url('../../../fonts/Geometric415BT-LiteA.woff') format('woff'), url('../../../fonts/Geometric415BT-LiteA.ttf') format('truetype'), url('../../../fonts/Geometric415BT-LiteA.svg#Geometric415BT-LiteA') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaBT-Book';
+    src: url('../../../fonts/FuturaBT-Book.eot');
+    src: url('../../../fonts/FuturaBT-Book.eot?#iefix') format('embedded-opentype'), url('../../../fonts/FuturaBT-Book.woff') format('woff'), url('../../../fonts/FuturaBT-Book.ttf') format('truetype'), url('../../../fonts/FuturaBT-Book.svg#FuturaBT-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('../../../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'), url('../../../fonts/MyriadPro-Regular.otf') format('opentype'), url('../../../fonts/MyriadPro-Regular.woff') format('woff'), url('../../../fonts/MyriadPro-Regular.ttf') format('truetype'), url('../../../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro-Bold';
+    src: url('../../../fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'), url('../../../fonts/MyriadPro-Bold.otf') format('opentype'), url('../../../fonts/MyriadPro-Bold.woff') format('woff'), url('../../../fonts/MyriadPro-Bold.ttf') format('truetype'), url('../../../fonts/MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kalinga-Bold';
+    src: url('../../../fonts/Kalinga-Bold.eot?#iefix') format('embedded-opentype'), url('../../../fonts/Kalinga-Bold.woff') format('woff'), url('../../../fonts/Kalinga-Bold.ttf') format('truetype'), url('../../../fonts/Kalinga-Bold.svg#Kalinga-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.containerNew {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1537px;
+}
+
+#content {
+}
+
+.content {
+}
+
+.sidebar {
+}
+
+.fullWidth {
+}
+
+.newHeader {
+    background: #fff;
+}
+
+.liveSupportPos {
+    display: none !important
+}
+
+.newHeader {
+    padding: 0 40px;
+}
+
+#header {
+    background: none;
+    padding-top: 0;
+}
+
+.aboutContainerNew {
+    width: 1241px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.mainContentBg {
+    background: #fff url(../../../Images/main-container-bg.png) center bottom no-repeat;
+    background-size: 100%;
+}
+
+.popupFeedback {
+    display: none;
+}
+
+.containerNew #slider .center {
+    width: 1240px;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal, .jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width: 1218px;
+    height: 299px;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+    width: 609px;
+    height: 305px;
+}
+
+#slider {
+    height: 304px;
+    background: none;
+    border: none;
+}
+
+.overlay {
+    top: 0px;
+}
+
+.toggleMenu .title, .toggleMenu .title a, .enroll a, .enroll {
+    font-family: 'Geometric415BT-LiteA';
+    color: #cf2436;
+    width: auto;
+}
+
+.toggleMenu .title, .toggleMenu.active .title {
+    background: none;
+    padding: 0;
+    font: inherit;
+}
+
+.toggleMenu.active {
+    width: auto;
+    background: none;
+}
+
+.toggleSlide .slideToggle {
+    left: -94px;
+    top: 35px;
+}
+
+.toggleMenu {
+    width: auto;
+}
+
+.enrollLink, .toggleSlide {
+    float: left;
+}
+
+    .enrollLink a, .enroll a, .enrollLink {
+        font-size: 23px;
+    }
+
+.callNew, .languageNew {
+    float: left;
+}
+.searchNew {/*ADDED BY SUBIA FOR NEW DESIGN*/
+    float: right;
+}
+.callNew, .languageNew {
+    font-family: 'FuturaBT-Book';
+    font-size: 23px;
+    color: #1f1917;
+}
+
+    .callNew .callIconNew, .searchNew .searchIconNew, .enroll .enrollIcon, .slideTabsNew li.bookFlight a:before, .slideTabsNew li.scheduleFlight a:before, .slideTabsNew li.flightStatusInfo a:before, .slideTabsNew li.flightPreferSeat a:before, .slideTabsNew li.flightCheckIn a:before, .carouselBlock .owl-controls .owl-nav .owl-prev, .carouselBlock .owl-controls .owl-nav .owl-next, .carouselBlock2 .owl-controls .owl-nav .owl-prev, .carouselBlock2 .owl-controls .owl-nav .owl-next, .info, .bookingHotel, .callSupportIcon, #header .screenReader li .standardView, #header .screenReader li .highContrastView {
+        background: url(../../../Images/new-home-sprite.png);
+    }
+
+    .callNew .callIconNew, .searchNew .searchIconNew, .enroll .enrollIcon {
+        text-indent: -9999px;
+        display: inline-block;
+    }
+
+    .callNew .callIconNew {
+        background-position: 0 -75px;
+        width: 30px;
+        height: 30px;
+    }
+
+.searchNew .searchIconNew {
+    background-position: 100% 0;
+    width: 50px;
+    height: 50px;
+}
+
+.enroll .enrollIcon {
+    background-position: 0 0;
+    float: left;
+    width: 55px;
+    height: 50px;
+    margin-top: -16px;
+}
+
+.langWrap, .searchWrap {
+    display: none;
+}
+
+.callNew {
+    margin-top: 13px;
+}
+
+.searchIconNew {
+    cursor: pointer;
+    float: left;
+}
+
+.searchWrap {
+    float: left;
+    width: 257px;
+}
+
+.searchNew .input {
+    border: 1px solid #d1d1d1;
+    padding: 8px;
+}
+
+.searchNew .submit {
+    background: #cf2436;
+    color: #fff;
+    padding: 8px;
+}
+
+.appDownload, .callSupportNew {
+    width: 399px;
+    float: left;
+}
+
+.cargoBlockNew {
+    width: 418px;
+    float: left;
+    margin: 0 12px;
+}
+
+.downloadNow {
+    background: #cf2436;
+    padding: 25px 0;
+    text-align: center;
+}
+
+    .downloadNow a {
+        display: inline;
+        padding: 0 8px;
+    }
+
+.socialLinks a {
+    display: inline;
+    padding: 0 3px;
+}
+
+.downloadNow .title, .socialLinks .title {
+    font-family: 'MyriadPro-Regular';
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    padding-top: 4px;
+}
+
+.callSupportNew .trollNumber {
+    background: url(../../../Images/troll-bg.jpg) left top no-repeat;
+    height: 358px;
+    padding: 80px 25px 0 25px;
+    font-family: 'MyriadPro-Regular';
+    text-transform: uppercase;
+    color: #cf2436;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+#header .headerBar {
+    padding-top: 5px;
+}
+
+    #header .headerBar.enroll {
+        padding-top: 32px;
+    }
+
+.socialLinks .title {
+    padding: 4px 10px 0 0;
+}
+/*----pooja-----*/
+
+.flightForm, .flightSchedule {
+    position: inherit;
+}
+
+.flightSchedule, .flightForm {
+    width: 90% !important;
+    left: inherit;
+    top: inherit;
+    margin-top: 12% !important;
+    Margin-left: -22px;
+}
+
+.searchFlightContentWrapNew h2, .searchFlightContentWrapNew .tabs {
+    display: none;
+}
+
+.slideTabsNew {
+    background: #cf2436;
+    padding: 20px;
+    text-align: center;
+}
+
+    .slideTabsNew li {
+        display: inline-block;
+        padding: 0 50px
+    }
+
+        .slideTabsNew li a {
+            color: black;
+            font-size: 22px;
+            font-family: 'MyriadPro-Regular';
+            color: black;
+            height: 56px;
+            line-height: 56px;
+            display: inline-block;
+        }
+
+        .slideTabsNew li.bookFlight a, .slideTabsNew li.flightPreferSeat a, .slideTabsNew li.flightCheckIn a, .slideTabsNew li.flightStatusInfo a, .slideTabsNew li.scheduleFlight a {
+            text-align: left;
+            position: relative;
+            text-decoration: none;
+        }
+
+        .slideTabsNew li.bookFlight a {
+            background-position: 0 -114px;
+            padding: 0 0px 0 70px;
+        }
+
+        .slideTabsNew li.flightPreferSeat a {
+            background-position: 0 -198px;
+            padding: 0 0px 0 50px;
+        }
+
+        .slideTabsNew li.flightCheckIn a {
+            background-position: 0 -275px;
+            padding: 0 0px 0 50px;
+        }
+
+        .slideTabsNew li.flightStatusInfo a {
+            background-position: 0 -338px;
+            padding: 0 0px 0 30px;
+        }
+
+        .slideTabsNew li.scheduleFlight a {
+            background-position: 0 -386px;
+            padding: 0 0px 0 70px;
+        }
+
+            .slideTabsNew li.bookFlight a:before, .slideTabsNew li.flightPreferSeat a:before, .slideTabsNew li.flightCheckIn a:before, .slideTabsNew li.flightStatusInfo a:before, .slideTabsNew li.scheduleFlight a:before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                content: "";
+                transition: all 0.3s ease-in-out 0s;
+            }
+
+        .slideTabsNew li.bookFlight a:before {
+            background-position: 0 -114px;
+            width: 56px;
+            height: 50px;
+        }
+
+        .slideTabsNew li.flightPreferSeat a:before {
+            background-position: 0 -198px;
+            width: 50px;
+            height: 58px;
+        }
+
+        .slideTabsNew li.flightCheckIn a:before {
+            background-position: 0 -275px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .slideTabsNew li.flightStatusInfo a:before {
+            background-position: 0 -338px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .slideTabsNew li.scheduleFlight a:before {
+            background-position: 0 -386px;
+            width: 55px;
+            height: 55px;
+        }
+
+        .slideTabsNew li.bookFlight a:hover, .slideTabsNew li.bookFlight a.active, .slideTabsNew li.flightPreferSeat a:hover, .slideTabsNew li.flightCheckIn a:hover, .slideTabsNew li.flightStatusInfo a:hover, .slideTabsNew li.scheduleFlight a:hover {
+            color: #ffbe80;
+            transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+        }
+
+            .slideTabsNew li.bookFlight a:hover:before, .slideTabsNew li.bookFlight a.active:before {
+                background-position: -100px -114px;
+            }
+
+            .slideTabsNew li.flightPreferSeat a:hover:before {
+                background-position: -100px -198px;
+            }
+
+            .slideTabsNew li.flightCheckIn a:hover:before {
+                background-position: -100px -275px;
+            }
+
+            .slideTabsNew li.flightStatusInfo a:hover:before {
+                background-position: -100px -338px;
+            }
+
+            .slideTabsNew li.scheduleFlight a:hover:before {
+                background-position: -100px -386px;
+            }
+
+.searchFlightContentWrapNew {
+    background: #b60c1e url(../../../Images/booking-arrow-bg.jpg) left top repeat-x;
+    padding-top: 20px;
+}
+
+.hideBooking {
+    display: none;
+}
+
+.webcheckPopup {
+    display: none !important;
+}
+
+.tollFreeNo {
+    font-size: 28px;
+    font-family: 'MyriadPro-Bold';
+    line-height: 32px;
+}
+
+.contentPanel:before, .contentPanel:after {
+    content: "";
+    display: table;
+}
+
+.contentPanel:after {
+    clear: both;
+}
+
+.carouselBlock .owl-controls .owl-nav .owl-prev, .carouselBlock .owl-controls .owl-nav .owl-next, .carouselBlock2 .owl-controls .owl-nav .owl-prev, .carouselBlock2 .owl-controls .owl-nav .owl-next {
+    width: 38px;
+    height: 38px;
+    text-indent: -9999px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.carouselBlock .owl-controls .owl-nav .owl-prev, .carouselBlock2 .owl-controls .owl-nav .owl-prev {
+    background-position: 84.5% -74px;
+    left: -60px;
+    top: 45%
+}
+
+.carouselBlock .owl-controls .owl-nav .owl-next, .carouselBlock2 .owl-controls .owl-nav .owl-next {
+    background-position: 100% -74px;
+    right: -60px;
+    top: 45%
+}
+
+.carouselBlock .owl-controls .owl-nav .owl-prev:hover, .carouselBlock2 .owl-controls .owl-nav .owl-prev:hover {
+    background-position: 84.5% -124px;
+}
+
+.carouselBlock .owl-controls .owl-nav .owl-next:hover, .carouselBlock2 .owl-controls .owl-nav .owl-next:hover {
+    background-position: 100% -124px;
+}
+
+.flightSchedule .trip li .link {
+    background: none;
+    padding: 0;
+}
+
+.socialLinks {
+    background: #cf2436;
+    padding: 25px 0;
+    text-align: center;
+    margin-top: -8px;
+}
+
+.liveSupportNew {
+    position: absolute;
+}
+
+.bookingHotel {
+    position: absolute;
+    right: 0;
+    top: 160px;
+    background-position: 100% -285px;
+    text-indent: -9999px;
+    z-index: 100;
+}
+
+    .bookingHotel a {
+        display: block;
+        width: 62px;
+        height: 62px;
+    }
+
+#banner {
+    height: 500px;
+}
+
+    #banner .bx-controls {
+        display: block;
+    }
+
+.searchFlightContentWrapNew {
+    position: relative;
+    display: none;
+}
+
+    .searchFlightContentWrapNew:before {
+        content: "";
+        width: 50px;
+        height: 35px;
+        background: url(../../../Images/booking-active-arrow.png) left top no-repeat;
+        position: absolute;
+        left: 13.5%;
+        top: -20px;
+    }
+
+.scheduledForm li input.text, .loginForm li input.text {
+    border-radius: inherit !important;
+    height: 25px;
+    width: 95.9% !important;
+    margin-top: 2px;
+}
+
+p.rules, .radioDate label, .flightSchedule .trip li .link, .selectOptionNew .selectBox label {
+    font-family: 'Geometric415BT-LiteA';
+    color: black !important;
+    font-size: 12px !important;
+}
+
+.iradio {
+    margin-top: 1px;
+}
+
+.scheduledForm li input.text, .loginForm li input.text, .selectOptionNew .width55 label {
+    font-family: 'Geometric415BT-LiteA';
+    font-size: 12px !important;
+    color: black !important;
+}
+
+.scheduledForm li {
+    width: 100% important;
+}
+
+    .scheduledForm li:last-child {
+        width: 100% important;
+    }
+
+    .scheduledForm li.customFromParent, .scheduledForm li.customToParent {
+        width: 20%;
+    }
+
+        .scheduledForm li.customFromParent input.text, .scheduledForm li.customToParent input.text {
+            width: 60%;
+        }
+
+    .scheduledForm li.date, .scheduledForm li .date, .scheduledForm li.date2, .scheduledForm li .date2 {
+        width: % !important;
+        float: left !important;
+    }
+/*--pooja-- .scheduledForm li.date, .scheduledForm li .date{ margin-right:15%;} .flightSchedule .block{ margin:0 30px;}--*/
+
+.flightSchedule .block.block1 li {
+    float: left;
+}
+
+    .flightSchedule .block.block1 li.selectOptionNew {
+        width: 54%
+    }
+
+#nav a {
+    font-family: 'Geometric415BT-LiteA';
+    color: #fff;
+    font-size: 22px;
+    text-shadow: 1px 1px #222;
+}
+
+#header .menuBar, .wob #header .menuBar, .wob #header {
+    background: url(../../../Images/new-nav-bg.png) left top repeat-x !important;
+    box-shadow: inherit !important;
+    margin: 0;
+    height: 101px;
+}
+
+#container {
+    border: none;
+    float: left;
+    margin-top: -100px;
+    position: relative;
+}
+
+#nav li {
+    height: auto;
+}
+
+#nav a {
+    background: none;
+}
+
+    #nav li:hover > a, #nav a:hover, #nav a:focus, #nav a:hover .megamenu, #nav a:focus .megamenu, #nav a.selected .megamenu, #nav .megamenu .hover > a, #nav li.hover a.menuFirstNode, #nav a.active, #nav a {
+        padding: 24px 40px 24px;
+    }
+
+        #nav li:hover > a, #nav a:hover, #nav a:focus, #nav a:hover .megamenu, #nav a:focus .megamenu, #nav a.selected .megamenu, #nav .megamenu .hover > a, #nav li.hover a.menuFirstNode, #nav a.active {
+            background: url(../../../Images/tabbing-contrast-bg-new.jpg) left top repeat-x;
+        }
+
+.menuPart {
+    width: auto;
+}
+/*#banner{ margin-top:-50px;}*/
+
+.languageNew {
+    margin: 6px 20px 0;
+}
+
+.languageFlag, .languageCode {
+    float: left;
+}
+
+.languageCode {
+    padding: 6px 0 0 10px;
+}
+
+.languageNew {
+    position: relative;
+}
+
+.langWrap {
+    width: 250px;
+    border: 1px solid #f1f1f1;
+    border-top: 5px solid #ee7307;
+    padding: 10px;
+    position: absolute;
+    /* top: 35px;
+    right: 0;*/
+    top: 110px;
+    right: 278px;
+    background: #fff;
+    z-index: 1005;
+    box-shadow: 2px 2px 2px #d1d1d1;
+}
+
+    .langWrap:after {
+        bottom: 100%;
+        right: 13%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute; /*pointer-events: none;*/
+        border-color: rgba(238, 115, 7, 0);
+        border-bottom-color: #ee7307;
+        border-width: 10px;
+        margin-left: -10px;
+    }
+
+    .langWrap .language {
+        width: 200px;
+        padding: 0 8px;
+        border: 1px solid #c2c2c2;
+        position: relative;
+        margin: 5px 0;
+    }
+
+        .langWrap .language .select {
+            width: 70px;
+            height: 19px;
+            display: block;
+            background: #fff url(../../../Images/dropd-ar.gif) right 8px no-repeat;
+            font-weight: bold;
+            color: #585858;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px !important;
+        }
+
+        .langWrap .language .styled {
+            width: 100% !important;
+            height: 25px !important;
+            padding-top: 3px;
+            font-size: 1em;
+            left: 0 !important;
+            top: 0 !important;
+            cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px !important;
+        }
+
+            .langWrap .language .styled option {
+                padding-bottom: 2px;
+                font-size: 1.1em;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px !important;
+            }
+
+    .langWrap .goBtn {
+        margin-top: 5px;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 28px;
+        height: 29px;
+    }
+
+#nav {
+    padding-left: 0;
+}
+
+    #nav li:hover > .megamenu {
+        top: 67px;
+        width: 1537px;
+        left: 0;
+    }
+
+    #nav li .megamenu .dropdown {
+        width: 1240px;
+    }
+
+        #nav li .megamenu .dropdown li {
+            font-size: 1.25em;
+            width: 275px;
+        }
+
+            #nav li .megamenu .dropdown li a {
+                text-shadow: inherit !important;
+                background-position: 265px -198px;
+            }
+
+.newsBlockNew {
+    background: url(../../../Images/news-new-block.jpg) left top repeat-x;
+    height: 216px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+    .newsBlockNew a {
+        padding: 5px 0;
+        display: block;
+        text-decoration: none;
+    }
+
+    .newsBlockNew .title {
+        font-size: 44px;
+        font-family: 'Kalinga-Bold';
+        line-height: 44px;
+        text-transform: uppercase;
+        color: #fff;
+        word-spacing: 2px;
+    }
+
+    .newsBlockNew .newsBullets {
+        font-family: 'Kalinga-Bold';
+        color: #fff;
+        font-size: 14px;
+    }
+
+        .newsBlockNew .newsBullets .date {
+            display: block;
+            font-size: 12px;
+        }
+
+.toggleSlide.alignRight {
+    float: left !important;
+}
+
+.bx-wrapper, .bx-viewport, .bxslider li {
+    height: 500px !important;
+}
+
+.countryFlag {
+    cursor: pointer;
+}
+
+p.rules { /*padding:2% 15% 0 0*/
+}
+/* p.rules a{ color:#fff;} by nitesh*/
+
+.flightSchedule .block.block1 li {
+    width: 40%
+}
+
+    .flightSchedule .block.block1 li fieldset.alignLeft {
+        padding-right: 15%
+    }
+
+    .flightSchedule .block.block1 li #divconcessionaryType {
+        float: left !important;
+    }
+
+.flightSchedule .ctypeSelect {
+    border-radius: inherit;
+    padding: 2px 2px 2px;
+}
+
+.selectOptionNew .width55 {
+    width: 50px !important;
+    padding-right: 10%;
+    float: left;
+}
+
+    .selectOptionNew .width55.lastSelect {
+        padding-right: 0;
+        position: relative;
+    }
+
+    .selectOptionNew .width55 label {
+        float: left;
+        color: #fff;
+        padding-right: 10px;
+    }
+
+.selectOptionNew .lastSelect, .selectOptionNew .oneline {
+    margin-left: 0px !important;
+}
+
+.flightSchedule .selectOptionNew .width55 .ctypeSelect, .flightSchedule .ctypeSelect, .flightSchedule .block.block1 li #divconcessionaryType {
+    background: #fff url(../../../Images/dropdown-arrow-img.png) 93% 12px no-repeat !important;
+}
+
+.flightSchedule .lang, .flightSchedule .ctype, .flightSchedule .ptype, .histype { /*height:20px;by nitesh*/
+    right: 0px;
+}
+
+/*//Kashish*/ 
+.newctype {
+        top: -18px !important;
+        padding-bottom:20px;
+    } 
+
+.flightSchedule .block.trip {
+    border: none;
+}
+
+.flightSchedule .block.scheduledForm {
+    padding-bottom: 0px !important;
+    margin-bottom: 0px;
+}
+/*Nitesh*/
+
+.flightSchedule .block {
+    border-bottom: #e5a8af 2px solid;
+}
+
+.info {
+    background-position: -91px -474px;
+    background-color: #fff; /*margin-left: 3px; margin-right: 9px; */
+    width: 25px;
+    height: 35px;
+}
+
+.flightSchedule .trip li .linkButtonNew {
+    background: #fff;
+    color: #222;
+    padding: 8px 23px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+    .flightSchedule .trip li .linkButtonNew:hover, .scheduledForm.last input.button:hover {
+        color: #d91d2b;
+    }
+
+.selectOptionNew .selectBox {
+    width: auto;
+}
+
+.scheduledForm.last {
+    width: 360px !important;
+}
+
+.selectOptionNew {
+    padding-top: 0px;
+    width: 100% !important;
+}
+/*---Nitesh---*/
+
+.scheduledForm.last input.button {
+    font-family: 'Geometric415BT-LiteA';
+    font-size: 12px;
+    background: #cf2436 !important;
+    box-shadow: -1px 1px 2px #444;
+    border-radius: 30px;
+    color: #fff !important;
+    padding: 6px 13px;
+    margin-right: 90px;
+    margin-top: 2px;
+}
+
+.scheduledForm li .dateImg, .ui-datepicker-trigger {
+    right: 7px;
+    height: 23px;
+}
+
+.home .overlay {
+    height: 500px !important;
+}
+
+.promoIcon {
+    position: absolute;
+    right: 0;
+    top: 1px;
+}
+
+.flightSchedule .trip li, .scheduledForm.last .first {
+    padding: 0 !important;
+}
+
+.pcode {
+    width: 166px;
+}
+
+#footer .footerContent {
+    width: 1100px;
+}
+
+    #footer .footerContent .footerLinks {
+        padding-right: 40px;
+        margin-right: 40px;
+    }
+
+        #footer .footerContent .footerLinks ul li {
+            padding-bottom: 5px;
+        }
+
+            #footer .footerContent .footerLinks ul li a {
+                font-family: 'MyriadPro-Regular';
+                font-size: 17px;
+            }
+
+    #footer .footerContent .footerLinks {
+        min-height: 225px;
+        width: 210px;
+    }
+
+#footer .footerBot .footerIn .copyrightLinks .copyright {
+    font-family: 'MyriadPro-Regular';
+    font-size: 14px;
+}
+
+#aboutAI .aboutContainer, #footer .footerBot .footerIn {
+    width: 1100px;
+}
+
+.screenReader {
+    float: left;
+    margin: 10px 20px 0 0
+}
+
+#header #logo {
+    padding: 0 0 5px 0
+}
+
+.visitCounter {
+    float: right;
+}
+
+.copyrightLinks {
+    float: left;
+}
+
+.footerNav {
+    float: left;
+}
+
+.valid {
+    float: right;
+    padding-top: 0;
+}
+
+.slideTabsNew li.bookFlight, .slideTabsNew li.customTooltipInfo {
+    position: relative;
+}
+
+    .slideTabsNew li.bookFlight:hover .customTooltipInfo {
+        display: block;
+        width: 250px;
+        left: 57px;
+        top: -122px;
+        text-align: left;
+    }
+
+        .slideTabsNew li.bookFlight:hover .customTooltipInfo span {
+            font-size: 15px;
+            color: #f9c347;
+            display: block;
+        }
+
+.slideTabsNew li.flightCheckIn:hover .customTooltipInfo {
+    top: -59px;
+    left: 57px;
+}
+
+.callSupportIcon {
+    position: absolute;
+    right: 0;
+    top: 95px;
+    background-position: 100% -192px;
+    text-indent: -9999px;
+    z-index: 100;
+}
+
+    .callSupportIcon a {
+        width: 62px;
+        height: 62px;
+        display: block;
+    }
+
+#header .screenReader li .standardView {
+    width: 21px;
+    height: 21px;
+    background-position: 0 -479px;
+}
+
+#header .screenReader li .highContrastView, .wob #header .screenReader li .highContrastView {
+    width: 21px;
+    height: 21px;
+    background-position: -32px -479px;
+    border: none;
+}
+
+.popupGDPR {
+    text-align: center;
+}
+
+.wob #container, .wob .newHeader, .wob .popupGDPR, .wob .closePopupGDPR, body.wob {
+    background: #000;
+}
+
+.wob .slideTabsNew {
+    background: #222;
+}
+
+.wob .popupGDPR, .wob .callNew, .wob .languageNew {
+    color: #fff;
+}
+
+.wob .flightSchedule .trip li .linkButtonNew {
+    background: #000;
+    border: 1px solid #80FF00;
+}
+
+.wob .flightSchedule {
+    border: none;
+    border-radius: inherit;
+}
+
+.wob .searchFlightContentWrapNew {
+    background: #000 url(../../../Images/wob-booking-arrow-bg.jpg) left top repeat-x;
+    padding-top: 20px;
+}
+
+    .wob .searchFlightContentWrapNew:before {
+        content: "";
+        width: 50px;
+        height: 35px;
+        background: url(../../../Images/wob-booking-active-arrow.png) left top no-repeat;
+        position: absolute;
+        left: 13.5%;
+        top: -20px;
+    }
+
+.wob .flightSchedule {
+    background: #181818;
+}
+
+.carouselBlock, .carouselBlock2 {
+    margin-top: 20px;
+}
+
+.contentPanel {
+    margin-top: 20px;
+}
+
+#nav .megamenu {
+    top: 67px;
+    width: 1537px;
+    left: 0;
+    border: none;
+}
+
+#nav li .megamenu .advertise {
+    width: 254px;
+    border: none;
+}
+
+#nav li:hover > .megamenu {
+    border: none;
+}
+
+#wrapper {
+    max-width: inherit;
+}
+
+#nav li.MenuLi6 .megamenu .dropdown li:nth-child(9) {
+    clear: both;
+}
+
+#nav li .megamenu .dropdown li a:hover, #nav li .megamenu .dropdown li a:focus, #nav li .megamenu .dropdown li a.selected, #nav li:hover > .megamenu a {
+    background-position: 264px -1479px;
+}
+
+.noJS .carouselBlock2 .item {
+    width: 615px;
+    margin: 0 10px 10px 0;
+    float: left;
+}
+
+.noJS .carouselBlock2 {
+    margin-right: -10px;
+}
+
+.noJS .carouselBlock, .noJS .carouselBlock2 {
+    overflow: hidden;
+}
+
+    .noJS .carouselBlock .item, .noJS .carouselBlock2 .item {
+        float: left;
+    }
+
+        .noJS .carouselBlock .item img, .noJS .carouselBlock2 .item img {
+            width: 100%;
+            height: auto;
+        }
+
+.noJS .langWrap, .noJS .searchWrap, .noJS .searchFlightContentWrapNew {
+    display: block
+}
+
+.infantPop:hover .customTooltipInfo {
+    display: block;
+    top: -102px;
+}
+
+.searchFlightContentNew span.error {
+    left: 0;
+    bottom: -20px;
+    top: inherit;
+    padding: 0;
+    width: auto;
+}
+
+    .searchFlightContentNew span.error:before {
+        bottom: 100%;
+        left: 20px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        border-color: rgba(238, 115, 7, 0);
+        border-bottom-color: #570003;
+        border-width: 5px;
+        margin-left: -5px;
+    }
+
+    .searchFlightContentNew span.error span {
+        background: #570003;
+    }
+
+.indibtn {
+    position: absolute;
+    right: 100px;
+    bottom: 10px;
+}
+
+.indibtnlft {
+    position: absolute;
+    right: 997px !important;
+    bottom: 10px;
+}
+
+.indibtn img { /*width:238px!important; height:58px!important;*/
+    width: 167px !important;
+    height: 35px !important;
+}
+
+.indiPromo {
+    position: absolute;
+    top: -35px;
+    left: 9px;
+    font-size: 11px;
+    color: #fff;
+    line-height: 14px;
+    width: 250px;
+}
+
+    .indiPromo span {
+        font-weight: bold;
+        color: #ff0;
+        font-size: 12px;
+    }
+
+.indiaBanner .slideDesc h2 {
+    background: none;
+}
+
+.webChatNav {
+    display: none !important;
+}
+
+body .topSearchList #ui-id-1.ui-autocomplete li a {
+    font-size: 1.1em;
+}
+
+#banner .bx-pager, .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+    top: 450px;
+}
+
+@media only screen and (max-width: 1537px) {
+    #nav li:hover > a, #nav a:hover, #nav a:focus, #nav a:hover .megamenu, #nav a:focus .megamenu, #nav a.selected .megamenu, #nav .megamenu .hover > a, #nav li.hover a.menuFirstNode, #nav a.active, #nav a {
+        padding: 24px 30px 24px;
+    }
+
+    .flightSchedule .block.block1 li.selectOptionNew {
+        clear: both;
+    }
+
+    .selectOptionNew .width55 {
+        padding-right: 3%;
+    }
+
+    .containerNew {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    #nav li:hover > a, #nav a:hover, #nav a:focus, #nav a:hover .megamenu, #nav a:focus .megamenu, #nav a.selected .megamenu, #nav .megamenu .hover > a, #nav li.hover a.menuFirstNode, #nav a.active, #nav a {
+        padding: 24px 25px 24px;
+    }
+
+    .slideTabsNew li {
+        padding: 0 25px;
+    }
+
+    .aboutContainerNew, #footer .footerContent {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .appDownload, .callSupportNew {
+        width: 30%;
+    }
+
+    .cargoBlockNew {
+        width: 37.5%;
+    }
+
+    .appDownload img, .cargoNewBanner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .downloadNow img {
+        width: 28px;
+    }
+
+    #footer .footerContent .footerLinks {
+        width: 18.5%;
+        min-height: inherit;
+        height: inherit;
+    }
+
+    .callSupportNew .trollNumber {
+        height: 244px;
+        padding: 31px 25px 0 25px;
+    }
+
+    .tollFreeNo {
+        font-size: 20px;
+    }
+
+    .newsBlockNew a {
+        padding: 38px 0;
+    }
+
+    .newsBlockNew {
+        height: 152px;
+    }
+
+        .newsBlockNew .title {
+            font-size: 35px;
+            line-height: 35px;
+        }
+
+    .owlCarousel .item {
+        height: auto;
+    }
+
+    /*#banner .bx-viewport li {
+        background-size: 100% !important
+    }*/
+
+    .bx-wrapper, .bx-viewport, .bxslider li, #banner {
+        height: 500px !important;
+    }
+
+    .carouselBlock .owl-controls .owl-nav .owl-prev, .carouselBlock2 .owl-controls .owl-nav .owl-prev {
+        left: 0px;
+        top: 40%
+    }
+
+    .carouselBlock .owl-controls .owl-nav .owl-next, .carouselBlock2 .owl-controls .owl-nav .owl-next {
+        right: 0px;
+        top: 40%
+    }
+
+    #banner .bx-pager, .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+        top: 450px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .aboutContainerNew, #footer .footerContent, #footer .footerContent .footerLinks {
+        width: 100%;
+    }
+
+    #banner, .bx-wrapper, .bx-viewport, .bxslider li {
+        height: auto;
+    }
+
+    #footer {
+        min-width: inherit;
+    }
+
+    #header .menuBar {
+        height: inherit;
+    }
+
+    #container {
+        margin-top: 0;
+    }
+
+    .slideTabsNew {
+        text-align: left;
+    }
+
+    .owlCarousel .item {
+        height: auto;
+    }
+
+    #banner .bx-wrapper, #banner {
+        display: block;
+    }
+
+    .newHeader {
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .appDownload, .callSupportNew, .cargoBlockNew, .newsBlockNew, .visitCounter, .valid {
+        width: 100%;
+    }
+
+        .appDownload img, .cargoBlockNew img {
+            width: 100%;
+            height: auto;
+        }
+
+    .cargoBlockNew {
+        margin: 0;
+    }
+
+    .downloadNow img {
+        width: 28px;
+    }
+
+    #footer .footerContent .footerLinks, .footerNav, .footerNav {
+        width: 100%;
+    }
+
+    .slideTabsNew li {
+        padding: 0;
+        display: block;
+    }
+
+    .scheduledForm li.customFromParent, .scheduledForm li.customToParent, .scheduledForm li, .scheduledForm li:last-child, .flightSchedule .block.block1 li, .flightSchedule .block.block1 li.selectOptionNew, /*--pooja--.scheduledForm li:last-child{ width:100%;}---*/ .scheduledForm.last {
+        margin: 0;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    #footer .footerContent .footerLinks, .footerNav {
+        width: 100% !important
+    }
+
+    #footer .footerContent .footerLinks {
+        min-height: inherit !important
+    }
+
+    .popupGDPR {
+        padding: 5px 10px;
+    }
+
+    .searchNew {
+        float: right;
+        clear: both;
+        margin-top: 5px;
+    }
+
+    #header #logo a.logo1 img, #header #logo a.logo2 img {
+        height: auto;
+    }
+
+    .callNew, .languageNew {
+        font-size: 16px;
+    }
+
+    .screenReader {
+        display: none;
+    }
+
+    .enrollLink a, .enroll a, .enrollLink {
+        font-size: 20px;
+    }
+
+    .slideTabsNew li.scheduleFlight a, .slideTabsNew li.flightStatusInfo a, .slideTabsNew li.flightCheckIn a, .slideTabsNew li.flightPreferSeat a, .slideTabsNew li.bookFlight a {
+        padding: 0 0px 0 70px;
+    }
+
+    #footer .footerContent .footerLinks {
+        height: inherit;
+    }
+
+    #footer .footerBot .footerIn .copyrightLinks .footerNav li {
+        float: none;
+        display: inline-block;
+    }
+
+    .aboutContainerNew {
+        padding: 0 5px;
+    }
+
+    .carouselBlock, .carouselBlock2, .contentPanel, .newsBlockNew, .cargoBlockNew, .callSupportNew {
+        margin-top: 5px;
+    }
+
+    .aboutContainerNew {
+        padding: 0 5px;
+        box-sizing: border-box;
+    }
+
+    .flightSchedule .block {
+        margin: 0 10px;
+    }
+
+    .scheduledForm li.customFromParent input.text, .scheduledForm li.customToParent input.text {
+        box-sizing: border-box;
+        width: 100%;
+        height: 32px;
+    }
+
+    .scheduledForm li.date, .scheduledForm li .date, .scheduledForm li.date2, .scheduledForm li .date2 {
+        width: 35%;
+    }
+
+    .slideTabsNew {
+        padding: 5px 10px;
+    }
+
+        .slideTabsNew li {
+            border-bottom: 1px solid #900;
+            margin-bottom: 5px;
+            padding-bottom: 5px;
+        }
+
+            .slideTabsNew li:last-child {
+                border: none;
+            }
+
+    #header .headerBar {
+        display: none;
+    }
+
+        #header .headerBar.enroll {
+            display: block !important;
+            float: right !important
+        }
+
+    #header #logo a.logo2 img {
+        margin-top: 12px;
+    }
+
+    #header {
+        padding: 0 !important;
+    }
+
+        #header #logo {
+            padding: 5px 0;
+        }
+
+    .callSupportNew .trollNumber {
+        height: 200px;
+        padding: 26px 25px 0 25px;
+    }
+
+    .scheduledForm li .date2 {
+        margin-top: 5px;
+    }
+
+    .flightSchedule .ctypeSelect, .pcode {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .w208, .selectOptionNew .selectBox, .selectOptionNew .width55 {
+        width: 100% !important;
+    }
+
+    .tollFreeNo {
+        font-size: 25px;
+    }
+
+    .flightSchedule .lang, .flightSchedule .ctype, .flightSchedule .ptype, .histype {
+        height: inherit !important;
+        width: 100% !important;
+    }
+
+    #footer .footerContent .footerLinks ul li a {
+        font-size: 14px;
+    }
+
+    .slideTabsNew li a, #nav a {
+        font-size: 20px;
+    }
+
+    .scheduledForm.last input.button {
+        margin-top: 10px;
+    }
+
+    .scheduledForm.last {
+        padding: 10px 11px 11px 10px !important
+    }
+
+    .pcode {
+        padding-left: 0;
+    }
+    /* independance day regarding css */
+
+    .indiPromo {
+        position: absolute;
+        top: 0px;
+        left: 208px;
+        font-size: 11px;
+        color: #fff;
+        line-height: 14px;
+        width: 130px;
+    }
+}
+
+.contactDrop {
+    background: #fff url(../../../Images/dropd-ar.gif) 98.5% 8px no-repeat
+}
+
+.bookingHotel a, .slideTabsNew li.bookFlight a:hover, .slideTabsNew li.bookFlight a.active, .slideTabsNew li.flightPreferSeat a:hover, .slideTabsNew li.flightCheckIn a:hover, .slideTabsNew li.flightStatusInfo a:hover, .slideTabsNew li.scheduleFlight a:hover {
+    color: #fff
+}
+
+#banner .bx-viewport, .newsBlockNew {
+    background: #cf2436
+}
+/**********Delhi to Telaviv New Style**********/
+
+.htable td {
+    padding: 7px 4px;
+    border: solid 2px #fff;
+}
+
+.small td {
+    font-size: 12px;
+}
+
+.secfooter {
+    line-height: 1.4;
+}
+
+.bottom-logo {
+    vertical-align: bottom;
+}
+
+@media only screen and (max-width: 620px) {
+    .wrapper .section {
+        width: 100%;
+    }
+
+    .wrapper .column {
+        width: 100%;
+        display: block;
+    }
+
+    .htable, .htable tr, .htable td {
+        font-size: 11px;
+    }
+
+        .htable td {
+            padding: 4px;
+            border: solid 1px #fff;
+        }
+ 
+    .small {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .languageCodeHnd {
+        padding: 6px 0 0 10px;
+        font-size: 20px;
+        color: #000;
+    }
+
+    .languageCodeHnd a {
+            color: #000;
+     }
+
+            .languageCodeHnd a:hover {
+                color: #000;
+            }
+
+    .langSelect, .hndButton {
+        display: none !important;
+    }
+
+    .slideTabsNew li.groupBooking a:before, .slideTabsNew li.bidUpgrade a:before {
+        background: url(/images/checklist.png);
+    }
+
+    .slideTabsNew li.groupBooking a, .slideTabsNew li.bidUpgrade a {
+        text-align: left;
+        position: relative;
+        text-decoration: none;
+    }
+
+    .slideTabsNew li.groupBooking a {
+        background-position: 0 -198px;
+        padding: 0 0px 0 50px;
+    }
+
+    .slideTabsNew li.bidUpgrade a {
+        background-position: 0 -198px;
+        padding: 0 0px 0 50px;
+    }
+
+        .slideTabsNew li.groupBooking a:before, .slideTabsNew li.bidUpgrade a:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: "";
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+    .slideTabsNew li.groupBooking a:hover::before {
+        background-position: -229px -114px;
+    }
+
+    .slideTabsNew li.groupBooking a::before {
+        background-position: -170px -114px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .slideTabsNew li.bidUpgrade a:hover::before {
+        background-position: -219px -274px;
+    }
+
+    .slideTabsNew li.bidUpgrade a::before {
+        background-position: -163px -274px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .slideTabsNew li {
+        padding: 0 10px;
+    }
+
+        .slideTabsNew li.groupBooking a, .slideTabsNew li.bidUpgrade a {
+            padding: 0 0px 0 70px;
+        }
+    /* Nitesh - Chat Now */
+
+    .embeddedServiceHelpButton .helpButton .uiButton {
+        background-color: #005290;
+        font-family: "Arial", sans-serif;
+    }
+
+        .embeddedServiceHelpButton .helpButton .uiButton:focus {
+            outline: 1px solid #005290;
+        }
+
+    .selectOptionNew .selectBox {
+        width: auto !important;
+        margin-top: 20px !important;
+    }
+
+    .w208 {
+        width: 1px !important;
+    }
+
+    .alignLeft {
+        float: left !important;
+    }
+
+    .selectOptionNew .lastSelect {
+        margin-top: 20px important;
+        float: right;
+    }
+
+    .wob .flightSchedule .selectOptionNew .width55 .ctypeSelect, .wob .flightSchedule .ctypeSelect, .flightSchedule .block.block1 li #divconcessionaryType {
+        background: url(../../../Images/dropdown-arrow-img.png) 94% -34px no-repeat !important;
+    }
+
+    .selectOptionNew .lastSelect {
+        margin-top: 37px;
+        float: right;
+    }
+
+    .selectOptionNew .selectBox {
+        background: none;
+        float: left;
+        margin-top: 0;
+    }
+
+    .selectBox {
+        width: 170px !important;
+        background: #fff url(../../../Images/input-bg.gif) left top repeat-x;
+        position: relative;
+    }
+
+    #divclasstype1 {
+        float: left !important;
+        margin-left: 100px !important;
+        margin-top: 30px !important
+    }
+    /*-----puja for banner form design---*/
+
+    .flightSchedule {
+        width: 370px;
+        background: #fff;
+        -webkit-border-radius: 3px;
+        -webkit-box-shadow: 2px 2px 4px #747474;
+        position: absolute;
+        left: 10px;
+        top: 12px;
+    }
+
+    .flightForm {
+        width: auto;
+        position: absolute;
+        top: 10px;
+        z-index: 102;
+    }
+
+    .flightSchedule .cat li.active {
+        font-weight: 700;
+    }
+
+    .flightSchedule .cat li {
+        float: left;
+        display: inline;
+        background: url(../../../Images/book-bg.gif) left top no-repeat; /* font-size: .72em; */
+        color: #575757;
+        border-right: 1px solid #fff;
+        padding: 3px 2.8% 2px;
+    }
+
+    .flightSchedule .block {
+        border-bottom: 1px solid #e3e3e3;
+        margin: 0 10px;
+        padding: 1px 0;
+    }
+
+    .flightSchedule .trip li {
+        width: auto;
+        float: left;
+        clear: none;
+        display: inline;
+        position: relative;
+        padding: 10px 0 0;
+    }
+
+    .flightSchedule .trip li {
+        width: auto;
+        float: left;
+        clear: none;
+        display: inline;
+        position: relative;
+        padding: 10px 0 0;
+    }
+
+    .alignRight {
+        float: right !important;
+    }
+
+    .cf:after {
+        clear: both;
+        content: ' ';
+        display: block;
+        font-size: 0;
+        line-height: 0;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .flightSchedule .block {
+        border-bottom: 1px solid #e3e3e3;
+        margin: 0 10px; /*padding: 1px 0;*/
+    }
+
+    .scheduledForm { /*border-bottom: 1px solid #eee;*/
+        padding: 9px 0 0 !important;
+    }
+
+    .displayNone {
+        display: none !important;
+    }
+
+    input, label, textarea, select, button {
+        font-size: .77em;
+        line-height: 1.5em;
+        color: #555;
+    }
+
+    .scheduledForm li {
+        width: 100%;
+        float: left;
+        display: inline-block;
+        position: relative;
+        padding: 0 0 6px;
+    }
+
+    .flightSchedule .block.block1 {
+        border-bottom: none;
+    }
+    /*--pooja--.flightSchedule .rule { padding: 5px 0 3px; }--*/
+
+    .scheduledForm.last {
+        border: none;
+        padding: 0 11px 11px 0 !important;
+    }
+    /*-----pooja-----*/
+
+    .scheduledForm li.date, .scheduledForm li .date {
+        width: 49% !important;
+        position: relative; /* margin-right: 12px; */
+    }
+
+    .flightSchedule .block.block1 li {
+        width: 100%;
+    }
+
+        .flightSchedule .block.block1 li.selectOptionNew {
+            width: 100%;
+        }

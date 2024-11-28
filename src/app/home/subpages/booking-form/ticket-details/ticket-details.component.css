@@ -1,0 +1,22 @@
+.float{
+    margin-left:30vw;
+}
+.container{
+    display: flex;
+}
+.heading{
+    margin-top: 4vw;
+}
+
+ul li{
+    background-color: rgba(227, 227, 227, 0.51);
+}
+.head{
+font-weight:bold;
+}
+.right{
+    float:right;
+    background-color: rgba(200, 200, 200, 0.51);
+    color:blue;
+    padding:.2vw;
+}

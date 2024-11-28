@@ -1,0 +1,78 @@
+$(document).ready(function () {
+    // executes when HTML-Document is loaded and DOM is ready
+    // Code For From Location
+    $.ajax({
+        type: "POST",
+        url: "AutoCompleteService.asmx/FillAirPortMasterForFromLocation",
+        dataType: 'json',
+        contentType: "application/json; charset=utf-8",
+        data: "{ 'siteId': '1' , 'languageId':'1' }",
+        success: function (exists) {
+
+
+            if (exists.d != '') {
+                var airportData = [];
+                $.each(eval(exists.d), function (i, currentlocation) {
+                    airportData[i] = currentlocation.AirportFullName;
+                });
+                $("#txtFromLocation").autocomplete({
+                    source: airportData,
+                    select: function (event, ui) {
+                        $("#formWebCheckInBtn").removeAttr("disabled");
+                    },
+                    change: function (event, ui) {
+                        if (ui.item == null) {
+                            $("#formWebCheckInBtn").attr("disabled", true);
+                        }
+                        else {
+                            $("#formWebCheckInBtn").removeAttr("disabled");
+                        }
+                    }
+                });
+            }
+        },
+        error: function (xhr, status, error) {
+        }
+    });
+    // breakpoint and up  
+    $(window).resize(function () {
+        if ($(window).width() >= 980) {
+
+            // when you hover a toggle show its dropdown menu
+            $(".navbar .dropdown-toggle").hover(function () {
+                $(this).parent().toggleClass("show");
+                $(this).parent().find(".dropdown-menu").toggleClass("show");
+            });
+
+            // hide the menu when the mouse leaves the dropdown
+            $(".navbar .dropdown-menu").mouseleave(function () {
+                $(this).removeClass("show");
+            });
+
+            // do something here
+        }
+    });
+
+    $("#btnbooking").click(function () {
+        document.querySelector('.main_form').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+    $("#ContentPlaceHolder1_BannerTabsForm_Servicing_btnSubmit").click(function () {
+        document.querySelector('.main_form').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+    $("#formWebCheckInBtn").click(function () {
+        document.querySelector('.main_form').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+    $("#btnFlightStatus").click(function () {
+        document.querySelector('.main_form').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+
+    // document ready  
+});

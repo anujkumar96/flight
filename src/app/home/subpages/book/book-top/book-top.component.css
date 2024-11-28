@@ -1,0 +1,33 @@
+.col{
+    color:yellow;
+    margin:2vw 0 0 0 ;
+  }
+.gap{
+    gap:80vw;
+}
+.form-style{
+     padding:2vw;
+     background-image: linear-gradient(to right, rgb(169, 230, 245) , rgb(0, 183, 255));
+    height:22vw;
+    width:40vw;
+     margin:auto;
+    border-radius: .5vw;
+    
+}
+
+.from, .to, .depart,  .select{
+    margin:.5vw;
+    width:17vw;
+    height:2.8vw;
+    border-radius:.3vw;
+}
+.submit{
+   float: right;
+}
+
+
+
+
+
+
+

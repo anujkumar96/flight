@@ -1,0 +1,11 @@
+.footer{
+    margin:4vw 8vw;
+        display: flex;
+        justify-content: flex-start;
+       }
+      ul li {
+        list-style-type: none;
+          }
+    
+      
+    

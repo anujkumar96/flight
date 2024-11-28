@@ -1,0 +1,116 @@
+<form class="w-50 m-auto form" [formGroup]="ticketbook" (ngSubmit)="bookticket()" >
+  <div clas="form2"> 
+
+    <div class="mb-3 w-100 m-auto  cls" >
+      <div class="mb-3 w-50 m-auto" >
+      <label for="flightticket" class="form-label">Service Provider</label>
+      <select class="form-control" name="serviceprovider"  formControlName="serviceprovider">
+        <option>{{ticketdata[0].serviceprovider}}</option>
+        <option>{{ticketdata[0].serviceprovider}}</option>
+   
+      </select>
+    </div>
+  
+    <div class="mb-3  w-25 m-auto">
+      <label for="flightticket" class="form-label">Source</label>
+      <select class="form-control" name="source"  formControlName="source">
+        <option>{{ticketdata[0].from }}</option>
+        <option>{{ticketdata[0].from }}</option>
+      
+      </select>
+    </div>
+
+    <div class="mb-3  w-25 m-auto">
+      <label for="flightticket" class="form-label">Destination</label>
+      <select class="form-control" name="destination"  formControlName="destination">
+        <option>{{ticketdata[0].to }}</option>
+        <option>{{ticketdata[0].to }}</option>
+  
+      </select>
+    </div>
+    
+  </div> 
+  
+  <div class="mb-3 w-100 m-auto  cls">
+  
+    <div class="mb-3  w-50 m-auto">
+      <label for="flightticket" class="form-label">Date</label>
+      <select class="form-control" name="date"  formControlName="date">
+        <option>{{fdata }}</option>
+        <option>{{fdata}}</option>
+           
+      </select>
+    </div>
+
+    <div class="mb-3  w-50 m-auto">
+      <label for="flightticket" class="form-label">Departure Time</label>
+      <select class="form-control" name="starttime" formControlName="starttime">
+        <option>{{ticketdata[0].starttime }}</option>
+        <option>{{ticketdata[0].starttime }}</option>
+            </select>
+    </div>
+
+    
+    <div class="mb-3  w-50 m-auto">
+      <label for="flightticket" class="form-label">Arrival Time</label>
+      <select class="form-control" name="endtime"  formControlName="endtime">
+        <option >{{ticketdata[0].endtime}}</option>
+        <option >{{ticketdata[0].endtime}}</option>
+        
+      </select>
+    </div>
+    
+    
+    <div class="mb-3  w-50 m-auto">
+      <label  class="form-label">Booking Price</label>
+      <select class="form-control" name="price"  formControlName="price">
+        <option >{{ticketdata[0].price }}</option>
+        <option >{{ticketdata[0].price }}</option>
+     
+      </select>
+    </div>
+   
+  </div>
+  
+     <div class="mb-3  w-50 m-auto">
+<select class="form-control" formControlName="userId" name="userId" aria-readonly="true">
+  <option>{{userid}}</option>
+  <option>{{userid}}</option>
+</select>
+</div>
+    <div class="mb-3 w-50 m-auto" >
+      <label for="exampleInputEmail1" class="form-label">Name</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" name="name" formControlName="name" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3 w-50 m-auto">
+      <label for="exampleInputPassword1" class="form-label">Mobile</label>
+      <input type="text" class="form-control"  name="mobile" formControlName="mobile" id="exampleInputmob">
+    </div>
+    <div class="mb-3  w-50 m-auto">
+      <label class="form-label" for="exampleCheck1">Date Of Birth</label>
+      <input type="date" class="form-control" name="dob" formControlName="dob" id="exampleCheck1">
+    </div>
+    <div class="mb-3  w-50 m-auto">
+      <label for="gender" class="form-label">Gender</label>
+      <select class="form-control" name="gender" formControlName="gender">
+       
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+    </div>
+    
+    <!-- <div class="mb-3  w-50 m-auto">
+      <label for="exampleInputEmail1" class="form-label">Number Of Ticket</label>
+      <input type="number" class="form-control" name="numOfTicket" formControlName="numOfTicket" id="exampleCheck1">
+    </div> -->
+    <div class="w-50 m-auto" >
+  
+      <button type="submit" class="btn btn-primary "  [disabled]="!ticketbook.valid">Submit</button>
+    </div>
+
+  </div>
+  
+  </form> 
+
+
+<!-- {{ ticketdata | json}} -->

@@ -1,0 +1,11 @@
+.glyphicon-chevron-right{
+    display:none;
+}
+.right.carousel-control, .left.carousel-control {
+    display: none;
+}
+.right.carousel-control, 
+.left.carousel-control 
+{
+     visibility:hidden;
+}

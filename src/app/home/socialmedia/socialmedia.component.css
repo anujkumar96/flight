@@ -1,0 +1,13 @@
+.container{
+    display:flex;
+    gap:1.6vw;
+    margin:1vw;
+}
+.container2{
+    display:flex;
+
+}
+.main{
+    display:flex;
+    flex-direction:column;
+}

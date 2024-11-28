@@ -1,0 +1,883 @@
+﻿(function ($) {
+    $(document).ready(function () {
+        //for mobile ads start
+        var isMobile = window.orientation > -1;
+        var finalCodeHomeAd = '<div data-position="12" data-ua="m" data-slot="359440" data-section="home" class="colombia " id="HP_Mobile_12" name="Homepage-Paid-mobile12" style="margin: 0 auto;"></div>';
+        let elementHome = document.getElementById("mobilead");
+        if (isMobile) {
+            if (elementHome) {
+                elementHome.innerHTML = finalCodeHomeAd;
+            }
+        }
+        // mobile ad ends
+
+        //M360 ad Codes//
+
+        var finalRows = '<div data-position="1" data-slot="359428" data-section="home" class="colombia " id="HP_DM_25" name="Homepage-Paid-mobiledesktop" style="margin: 0 auto;"></div>';
+        var element1 = document.getElementById("One");
+        if (element1) { element1.innerHTML = finalRows; }
+
+
+        var finalRows3 = '<div data-position="3" data-ua="d" data-slot="359430" data-section="home" class="colombia " id="HP_Desk_98" name="Homepage-Paid-desktop98" style="margin: 0 auto;"></div>';
+        var element3 = document.getElementById("Three");
+        if (element3) { element3.innerHTML = finalRows3; }
+
+        var finalRows4 = '<div data-position="11" data-ua="d" data-slot="359437" data-section="home" class="colombia " id="HP_Desk_11" name="Homepage-Paid-desktop11" style="margin: 0 auto;"></div>';
+        var element4 = document.getElementById("Four");
+        if (element4) { element4.innerHTML = finalRows4; }
+
+        var finalRows5 = '<div data-position="4" data-ua="d" data-slot="360515" data-section="home" class="colombia " id="HP_Desk_97" name="Homepage-Paid-desktop97" style="margin: 0 auto;"></div>';
+        var element5 = document.getElementById("Five");
+        if (element5) { element5.innerHTML = finalRows5; }
+
+        //M360 Code Ends//
+
+
+        //checkbox Booknow
+
+        $("#submit_button").click(function () {
+            window.location
+                = "https://bookme.airindia.in/AirindiaB2C/Booking/Search"
+            return false;
+        });
+        $('#terms_and_conditions').change(function () {
+
+            if (this.checked) {
+
+
+                document.getElementById("submit_button").disabled = false;
+            }
+
+
+        });
+
+        //
+        //Undertaking US Canada Start
+
+        !function (e) { "use strict"; function t(t, n, r) { for (var o = e(t), i = o.clone(n, r), a = o.find("textarea").add(o.filter("textarea")), l = i.find("textarea").add(i.filter("textarea")), c = o.find("select").add(o.filter("select")), d = i.find("select").add(i.filter("select")), f = 0, s = a.length; f < s; ++f)e(l[f]).val(e(a[f]).val()); for (f = 0, s = c.length; f < s; ++f)for (var p = 0, u = c[f].options.length; p < u; ++p)!0 === c[f].options[p].selected && (d[f].options[p].selected = !0); return i } function n(n) { var r = e(""); try { r = t(n) } catch (t) { r = e("<span />").html(n) } return r } function r(t, n, r) { var o = e.Deferred(); try { var i = (t = t.contentWindow || t.contentDocument || t).document || t.contentDocument || t; r.doctype && i.write(r.doctype), i.write(n), i.close(); var a = !1, l = function () { if (!a) { t.focus(); try { t.document.execCommand("print", !1, null) || t.print(), e("body").focus() } catch (e) { t.print() } t.close(), a = !0, o.resolve() } }; e(t).on("load", l), setTimeout(l, r.timeout) } catch (e) { o.reject(e) } return o } function o(e, t) { return r(window.open(), e, t).always(function () { try { t.deferred.resolve() } catch (e) { console.warn("Error notifying deferred", e) } }) } function i(e) { return !!("object" == typeof Node ? e instanceof Node : e && "object" == typeof e && "number" == typeof e.nodeType && "string" == typeof e.nodeName) } e.print = e.fn.print = function () { var a, l, c = this; c instanceof e && (c = c.get(0)), i(c) ? (l = e(c), arguments.length > 0 && (a = arguments[0])) : arguments.length > 0 ? i((l = e(arguments[0]))[0]) ? arguments.length > 1 && (a = arguments[1]) : (a = arguments[0], l = e("html")) : l = e("html"); var d = { globalStyles: !0, mediaPrint: !1, stylesheet: null, noPrintSelector: ".no-print", iframe: !0, append: null, prepend: null, manuallyCopyFormValues: !0, deferred: e.Deferred(), timeout: 750, title: null, doctype: "<!doctype html>" }; a = e.extend({}, d, a || {}); var f = e(""); a.globalStyles ? f = e("style, link, meta, base, title") : a.mediaPrint && (f = e("link[media=print]")), a.stylesheet && (f = e.merge(f, e('<link rel="stylesheet" href="' + a.stylesheet + '">'))); var s = t(l); if ((s = e("<span/>").append(s)).find(a.noPrintSelector).remove(), s.append(t(f)), a.title) { var p = e("title", s); 0 === p.length && (p = e("<title />"), s.append(p)), p.text(a.title) } s.append(n(a.append)), s.prepend(n(a.prepend)), a.manuallyCopyFormValues && (s.find("input").each(function () { var t = e(this); t.is("[type='radio']") || t.is("[type='checkbox']") ? t.prop("checked") && t.attr("checked", "checked") : t.attr("value", t.val()) }), s.find("select").each(function () { e(this).find(":selected").attr("selected", "selected") }), s.find("textarea").each(function () { var t = e(this); t.text(t.val()) })); var u, h, m, y, v = s.html(); try { a.deferred.notify("generated_markup", v, s) } catch (e) { console.warn("Error notifying deferred", e) } if (s.remove(), a.iframe) try { u = v, m = e((h = a).iframe + ""), 0 === (y = m.length) && (m = e('<iframe height="0" width="0" border="0" wmode="Opaque"/>').prependTo("body").css({ position: "absolute", top: -999, left: -999 })), r(m.get(0), u, h).done(function () { setTimeout(function () { 0 === y && m.remove() }, 1e3) }).fail(function (e) { console.error("Failed to print from iframe", e), o(u, h) }).always(function () { try { h.deferred.resolve() } catch (e) { console.warn("Error notifying deferred", e) } }) } catch (e) { console.error("Failed to print from iframe", e.stack, e.message), o(v, a) } else o(v, a); return this } }(jQuery);
+
+
+
+
+        $('#TnC').click(function () {
+            if ($(this).prop("checked") == true) {
+
+                $('#Printbtn').prop("disabled", false);
+            }
+            else if ($(this).prop("checked") == false) {
+                $('#Printbtn').prop("disabled", true);
+
+            }
+        });
+
+
+        $("#Printbtn").on('click', function () {
+            $("#Bookbtn").css("visibility", "visible");
+            $.print("#printcontent");
+            return false;
+
+
+        });
+
+
+
+        ////Undertaking US Canada End//
+
+        $.fn.center = function () {
+            this.css("position", "absolute");
+            this.css("top", ($(window).height() - this.height()) / 2 + $(window).scrollTop() + "px");
+            this.css("left", ($(window).width() - this.width()) / 2 + $(window).scrollLeft() + "px");
+            return this;
+        }
+        if ($('.load_sequenceTemp').length > 0) {
+            $(".launchText").center();
+            $('.leftcurtain, .rightcurtain').height($(window).height()); //+ $('#footerWrap').outerHeight() + 72
+            //$('.leftcurtain, .rightcurtain').width($(window).width());
+
+            $curtainopen = false;
+            $('#wrapper').css('display', 'none');
+            $(".rope").click(function () {
+
+                $('.launchText').blur();
+                if ($curtainopen == false) {
+                    $('.launchText').stop().animate({ top: '-370px' }, { queue: false, duration: 800, easing: 'easeInOutBack' });
+                    $(".leftcurtain").stop().animate({ width: '1px' }, 3200).fadeOut();
+                    $(".rightcurtain").stop().animate({ width: '1px' }, 3200).fadeOut();
+                    $curtainopen = true;
+                    $('#wrapper').fadeIn(1500);
+                } else {
+                    $('.launchText').stop().animate({ top: '-40px' }, { queue: false, duration: 350, easing: 'easeInOutBack' });
+                    $(".leftcurtain").stop().animate({ width: '50%' }, 2000);
+                    $(".rightcurtain").stop().animate({ width: '51%' }, 2000);
+                    $curtainopen = false;
+                    return false;
+                }
+                return false;
+            });
+        };
+        $("h4").click(function () {
+            var state = $(this).text();
+            $($(this).text()).css("display", "block !important");
+            $($(this).text()).find(".overview li > div").css("display", "block  !important");
+            $($(this).text()).find('.viewport').css("display", "block  !important");
+            $($(this).text()).tinycarousel();
+        });
+        //$(".hoverTip").powerTip({ placement: "ne"}); 
+        //$(".tip").powerTip({ placement: "n"});
+
+        $('.toggleSlide > a').click(function () {
+            return false;
+        });
+        var toggle = $(".toggleMenu"); var sToggle = $(".slideToggle"); var over = $(".overlay");
+
+        /*$("#nav .parentLI, .megamenu").fadeIn(function () {
+        $(over).css({ opacity: 0.75, display: "block" });
+        }).fadeOut(function () {
+        $(over).css({ opacity: 1, display: "none" });
+        });*/
+
+        $("#nav .parentLI").hover(function () {
+            $(over).show().css({ opacity: 0.75 });
+        }, function () {
+            $(over).hide();
+        });
+
+        /*$('#nav .parentLI').hover(function() {
+        $(over).stop().fadeIn();
+        }, function(){
+        $(over).stop().fadeOut();
+        });*/
+
+
+        /*$(li).on({
+        mouseenter: function () {
+        $(over).css({ opacity: 0.75, display: "block" });
+        },
+        mouseleave: function () {
+        $(over).css({ opacity: 1, display: "none" })
+        }
+        });*/
+
+
+
+
+        $(sToggle).hide();
+        $(toggle).click(function () {
+            $(this).toggleClass("active")
+        });
+
+        $(toggle).toggle(function () {
+            $(sToggle).show();
+            $(over).css({ opacity: 0.75, display: "block" });
+            if ($(sToggle).is(":visible"))
+                $('#nav .parentLI').mouseout(function () {
+                    $(over).css({ opacity: 0.75, display: "block" })
+                })
+        }, function () {
+            $(sToggle).hide();
+            $(over).css({ opacity: 1, display: "none" });
+            $('#nav .parentLI').mouseout(function () {
+                $(over).css({ opacity: 1, display: "none" })
+            })
+        });
+        $('.slideToggle input, input[type="radio"]').iCheck({ checkboxClass: "icheckbox", radioClass: "iradio", increaseArea: "-10%" });
+        $(".styled").customSelect({ customClass: "select" });
+        $(".lang").customSelect({ customClass: "customSelect" });
+        $(".ctype").customSelect({ customClass: "ctypeSelect" });
+        $(".ptype").customSelect({ customClass: "ptypeSelect" });
+        $(".histype").customSelect({ customClass: "histypeSelect" });
+
+
+        $("#carousel").jcarousel({ speed: 7E3, wrap: 'circular' });
+
+        // video 
+        $('.openVideo').click(function () {
+            $('.popupHomeVideo').show();
+            $('.popupHomeVideo .popupVideo').show();
+            if ($('.popVideoInner').find('iframe').length == 0) {
+                $('.popVideoInner').append('<iframe width="640" height="360" class="videoIfram" src="video/video.html" frameborder="0" scrolling="no"></iframe>');
+            }
+            return false;
+        });
+
+        $('.closeVideoPopup, .fadeVideo').click(function () {
+            $('.popupHomeVideo').hide();
+            $('.popupHomeVideo').hide();
+            if ($('.popVideoInner').find('iframe').length > 0) {
+                $('.popVideoInner').find('iframe').remove();
+            }
+
+            return false;
+        });
+
+        // only for twitter banner 22-10-14
+        // 1st scroll banner placed 11-12-14
+
+        $('#slider .gallery li.BannerNoMouseOver').hover(function () {
+            $(this).find('.slideText').css("display", "none");
+            return;
+        });
+
+        //		$('#slider .gallery li.Himg5').hover(function () {
+        //            $(this).find('.slideText').css("display", "none");
+        //            return;
+        //        });
+        // only for christmas banner 19-12-13
+
+        //$('#slider .gallery li.Himg1').hover(function(){
+        //	$(this).find('.slideText').css("display","none");
+        //	return;
+        //});
+
+        // banner sequence every time changing for India, USA, UK and others 
+        // Himg li positions
+        // IN for India and RW for Others and US for USA and GB for UK
+        // popupHim8 for Car Hire and popupHim4 for SBI and popupHim1 for Holidays
+
+        /*   For common Disclaimer popup */
+
+        //$('.clsDisclamier .slideText a').click(function () {
+        //    $('.popdisclaimer').show();
+        //    $('.popdisclaimer .popupVideo').show();
+        //    return false;
+        //});
+
+
+        /*  End */
+
+        //$('.Himg9.IN .slideText a, .Himg9.RW .slideText a').click(function () {
+        //	$('.popupHimg8').show();
+        //	$('.popupHimg8 .popupVideo').show();
+        //	return false;
+        //});
+        //$('.Himg6.IN .slideText a, .Himg6.RW .slideText a').click(function () {
+        //    $('.popupHimg4').show();
+        //    $('.popupHimg4 .popupVideo').show();
+        //    return false;
+        //});
+
+        //$('.Himg5.IN .slideText a, .Himg5.RW .slideText a, .Himg4.US .slideText a, .Himg4.GB .slideText a, a.splviewmore').click(function () {
+        //	$('.popupHimg1').show();
+        //	$('.popupHimg1 .popupVideo').show();
+        //	return false;
+        //});
+
+        $('.subscrbTrgr1').click(function () {
+            $('.sbscribe1').slideToggle('slow');
+        });
+
+
+        // added for live chat 03-07-17
+        $('.liveSupport').click(function (event) {
+            OpenLHNChat();
+            event.preventDefault();
+            return false;
+        });
+
+        $('.userSubscribe').click(function () {
+            $('.popupSubscribe').show();
+            $('.popupSubscribe .popupVideo').show();
+            return false;
+        });
+
+
+        // babula hided for Holiday offer removed 05-04-16
+
+        // $('a.splviewmore').click(function () {
+        //            $('.holidayDisclaimer').show();
+        //            $('.holidayDisclaimer .popupVideo').show();
+        //            return false;
+        //        });
+        $('.poStopover').click(function () {
+            $('.popupStopover').show();
+            $('.popupStopover .popupVideo').show();
+            return false;
+        });
+        $('.popCargo').click(function () {
+            $('.popupCargo').show();
+            $('.popupCargo .popupVideo').show();
+            return false;
+        });
+        $('.popExpress').click(function () {
+            $('.popupExpress').show();
+            $('.popupExpress .popupVideo').show();
+            return false;
+        });
+        $('.popVigilance').click(function () {
+            $('.popupVigilance').show();
+            $('.popupVigilance .popupVideo').show();
+            return false;
+        });
+
+        // Weekend Bonanza regarding 30-05-17
+        $("#weekendDate").datepicker({
+            beforeShowDay: function (date) {
+                var day = date.getDay();
+                return [day == 0 || day == 6, ""];
+            }
+        });
+
+        // babula hided for Holiday offer removed 05-04-16
+
+        /*$('#nav .MenuLi3 .dropdown li').eq(2).click(function () {
+            $('.holidayDisclaimer').show();
+            $('.holidayDisclaimer .popupVideo').show();
+            return false;
+        });
+        $('.germany #nav .MenuLi3 .dropdown li').eq(0).click(function () {
+            $('.holidayDisclaimer').show();
+            $('.holidayDisclaimer .popupVideo').show();
+            return false;
+        });*/
+        $('.closeVideoPopup, .fadeVideo').click(function () {
+            $('.popupDisclaimer').hide();
+            $('.popupDisclaimer .fadeWrapVideo').hide();
+            return false;
+        });
+
+        $('.opendisclaimer').click(function () {
+            $('.popupDisclaimer').show();
+            $('.popupDisclaimer .popupVideo').show();
+            return false;
+        });
+        $('.webCheckLink').hover(function () {
+            $('.webcheckPopup').show();
+        }, function () {
+            $('.webcheckPopup').hide();
+        });
+        $('.promoPopupLink').hover(function () {
+            $('.promoCodePopup').show();
+        }, function () {
+            $('.promoCodePopup').hide();
+        });
+        //jQuery('.mainNav .menuPart').meanmenu();
+        //$(".slideText").hide();
+        $("#slider").css({ overflow: "visible" });
+        /*$("#carousel li").hover(function(){
+        $(this).find(".slideText").slideToggle(400,"easeInOutBack")
+        });*/
+        $(".slideDivnoJS").hide();
+
+        //$(".bxslider").bxSlider({ mode: "fade", auto: true, pause: 1E4, speed: 650, responsive: true, preloadImages: "visible" });
+
+        var dt = { numberOfMonths: 2 };
+        $(".datepicker, .datepicker1, .datepicker2").datepicker({ changeMonth: true, changeYear: true, numberOfMonths: 2, showOn: 'button', buttonImage: "Images/date.gif", buttonImageOnly: true });
+
+        $("#menuLeft li > ul").hide();
+        $("#menuLeft li > ul li a[class=active]").parents('ul').show().prev('a').addClass('active');
+        $("#menuLeft li:has(ul)").addClass("parent");
+        $("#menuLeft li:has(ul) > a").click(function () {
+            $(this).addClass('active');
+            $(this).next('ul').slideDown('slow');
+            //return false;
+            $(this).parent().siblings('li').find('ul:visible').slideUp('slow').parent('li').find('a').removeClass('active');
+            return false;
+        });
+        var url = window.location.pathname, urlRegExp = new RegExp(url.replace(/\/$/, "") + "$");
+        $("#menuLeft li a").each(function () {
+            if (urlRegExp.test(this.href.replace(/\/$/, ""))) {
+                $(this).parent().parent().siblings().addClass("active");
+                $(this).parent().parent().slideDown("slow");
+                $(this).addClass('active');
+                $(this).next('ul').slideDown('slow');
+            }
+        });
+
+
+        $("#countries").msDropdown(); $("#countries_child ul").mouseover(function () { $("#countries_child ul").show() }).mouseleave(function () { $("#countries_child").hide() }); var callback = function () {
+            var h =
+                $(document).height(); var k = 107; $(over).height(h - k)
+        }; $(document).ready(callback); $(document).resize(callback);
+        $(".hideme").css("opacity", "0");
+
+        if ($(".tableData").length > 0) {
+            $('.tableData').each(function () {
+                $(this).find('tr').each(function () {
+                    $(this).find('td:first').addClass('firstTd');
+                    $(this).find('th:first').addClass('firstTh');
+                    $(this).find('th:last').addClass('lastTh');
+                });
+                $(this).find('tr:last').addClass('lastTr');
+                $(this).find('tr:even').addClass('evenRow');
+                $(this).find('tr:nth-child(2)').find('th:first').removeClass('firstTh');
+            });
+        };
+
+        $("#news-container").vTicker({ speed: 1E3, pause: 4E3, animation: "fade", mousePause: false, showItems: 3, height: 178, direction: 'up' });
+        $("#stopNews").attr("href", "#").toggle(function () {
+            $(this).removeClass("stop").addClass("play").text(playbutt).attr('title', playbutt);
+        }, function () {
+            $(this).removeClass("play").addClass("stop").text(stopbutt).attr('title', stopbutt);
+        });
+
+        $(".backNoteacc h4:first").addClass("active");
+        $(".backNoteacc p:not(:first)").hide();
+        $(".backNoteacc h4").click(function () {
+            $(this).next("p").slideToggle("slow")
+                .siblings("p:visible").slideUp("slow");
+            $(this).toggleClass("active");
+            $(this).siblings("h4").removeClass("active");
+        });
+        $(".ongroundacc h4:first").addClass("active");
+        $(".ongroundacc div:not(:first)").hide();
+        $(".ongroundacc h4").click(function () {
+            $(this).next("div").slideToggle("slow")
+                .siblings("div:visible").slideUp("slow");
+            $(this).toggleClass("active");
+            $(this).siblings("h4").removeClass("active");
+            $('.airportLongues').tinycarousel();
+        });
+        $('.rotateBanner').bxSlider({
+            mode: 'fade',
+            auto: true,
+            pause: 5000,
+            speed: 650,
+            responsive: true,
+            pagerCustom: '#rotate-pager'
+        });
+
+        $('.airportLongues').tinycarousel();
+        $('.ongroundBnr').bxSlider({ mode: 'fade', auto: true, pause: 5000, speed: 650, responsive: true, captions: true });
+        //$('#nav li.MenuLi6 .megamenu .dropdown li:nth-last-child(-n+5)').css({ marginTop: '-14px' });
+        $('.anchorLinks li:last-child').css({ border: 'none' });
+        $(window).scroll(function () {
+            $(".hideme").each(function (i) {
+                var bottom_of_object =
+                    $(this).position().top + $(this).outerHeight(); var bottom_of_window = $(window).scrollTop() + $(window).height(); if (bottom_of_window > bottom_of_object) $(this).animate({ "opacity": "1" }, 500)
+            })
+        })
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 150) {
+                $('#backToTop').fadeIn('200');
+            }
+            else {
+                $('#backToTop').fadeOut('200');
+            }
+        });
+        $('#backToTop').click(function () {
+            $('html, body').animate({ scrollTop: 0 }, '200');
+            return false;
+        });
+
+        $('#nav, #nav li .megamenu').hover(function () {
+            $('#ui-datepicker-div').hide();
+        });
+
+
+
+        // web check in popup 23-12-13
+
+        $('a.webcheckin').click(function () {
+            $('.webdisclaim').show();
+            $('.webdisclaim .popupVideo').show();
+            return false;
+        });
+
+        $('.closeVideoPopup, .fadeVideo').click(function () {
+            $('.popupDisclaimerSml').hide();
+            $('.popupDisclaimerSml .fadeWrapVideo').hide();
+            return false;
+        });
+        $('.closeVideoPopup, .fadeVideo').click(function () {
+            $('.popupHomeVideoSml').hide();
+            $('.popupHomeVideoSml').hide();
+            if ($('.popVideoInner').find('iframe').length > 0) {
+                $('.popVideoInner').find('iframe').remove();
+            }
+            return false;
+        });
+
+        // flying returns popup 11-12-15 added //
+        // flying returns popup 30-11-16 removed //
+        //$('#aMnu4').click(function() {
+        //        $('.popupFFP').show();
+        //        $('.popupFFP .popupVideo').show();
+        //            return false;
+        //        });
+
+
+        // marqee function 24-11-14
+
+        var $mq = $('.marquee').marquee({
+            speed: 10000,
+            gap: 0,
+            duplicated: false,
+            pauseOnHover: true
+        });
+        //        $(".btnPause").toggle(function () {
+        //            $(this).addClass('play');
+        //            $(this).text('Play');
+        //            $mq.marquee('pause');
+        //        }, function () {
+        //            $(this).removeClass('play');
+        //            $(this).text('Pause');
+        //            $mq.marquee('resume');
+        //            return false;
+        //        });
+
+
+        $('#nav li.MenuLiLast').hover(function () {
+            $(".overlay").hide();
+        });
+
+        $('#copenhagenContent').html('<iframe class="copenContent" scrolling="no" src="Copenhagen/index.html" width="100%" height="4012" frameborder="0"></iframe>');
+
+        // coupon code popup close 12-10-17
+
+        $(".closePromoNamePopup").click(function () {
+            $(".newPromoCodePopup").hide();
+        });
+
+
+        // feedback popup function added 24-11-14
+
+        $('#afeedback').click(function () {
+            $('.feedbackpopup').append('<div class="feedbackpopupBlock"><img width="24" height="24" src="video/close.png" alt="Close" class="closeFbPopu"  onclick="fnCloseFeedbackFromIframe();"> <iframe src="Feedback.aspx" name="aifeedback" id="aifeedback" width="820" height="700" scrolling="no" ></iframe></div>');
+        });
+        // dark site popup
+
+        //$('.darksite').show();
+        //$('.darksite .popupVideo').show();
+        //setTimeout(function (){closeDark()}, 10000);
+
+
+        // added for Web Check-In SSL Certificate Chrome error on 14-10-15
+        // commented for working in chrome 22-12-15
+        // $.browser.chrome = /chrome/.test(navigator.userAgent.toLowerCase());
+
+        // if ($.browser.chrome) {
+        // $('.webCheckLink').click( function() {
+        //   window.location.href = "online-web-checkin.htm";
+        //   return false;
+        //});
+        //}
+
+        // divine banner no link as per client request 29-02-16
+
+        /*$('#slider .gallery li.Himg5.IN').hover(function(){
+            $(this).find('.slideText a').css("display","none");
+            return;
+        });
+        $('.hindiDoc #slider .gallery li.Himg5.IN').hover(function() {
+         $(this).find('.slideText a').css("display", "block");
+         return;
+          });*/
+
+        // added for Mobile 06-02-17
+        // commented for vippan sir request 22-06-18
+        /*if (navigator.platform == 'iPad' || navigator.platform == 'iPhone' || navigator.platform == 'iPod' || navigator.platform == 'android' || navigator.platform == 'windows phone' || navigator.platform == 'blackberry' || navigator.platform == 'webos') {
+             $('.webCheckLink').click( function() {
+               window.location.href = "https://flyai.mobi/itraveljs/#!findFlights";
+               return false;
+            });
+        }*/
+
+
+        // darksite background 27-10-15
+        var vph = $(document).height();
+        $(".darkSiteStyle").css({ height: vph + "px" });
+
+        // New Home page regarding
+        if ($(".carouselBlock").length) {
+            $('.carouselBlock').owlCarousel({
+                loop: true
+                , autoplay: false
+                , autoplayTimeout: 6000
+                , smartSpeed: 3000
+                , margin: 20
+                , nav: true
+                , responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 2
+                    }
+                }
+            })
+        };
+        if ($(".carouselBlock2").length) {
+            $('.carouselBlock2').owlCarousel({
+                loop: true
+                , autoplay: false
+                , autoplayTimeout: 3000
+                , smartSpeed: 1200
+                , margin: 20
+                , nav: true
+                , responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 2
+                    }
+                }
+            })
+        };
+
+        if ($('.skipContent').length) {
+            $('.skipContent').click(function () {
+                $('html, body').animate({ scrollTop: $('#skip-to-content').offset().top - 0 }, 500);
+                return false;
+            });
+        }
+        if ($('.closePopupGDPR').length) {
+            $(".closePopupGDPR").click(function () {
+                $(".popupGDPR").slideUp();
+            });
+        }
+
+        //if($('.searchIconNew').length){	
+        //$(".searchIconNew").click(function(){
+        //	$(".searchWrap").toggle("slow");
+        //});
+        //}
+        //if($('.searchNew').length){	
+        //$(".searchNew").click(function(e){
+        //       e.stopPropagation();
+        //   });
+        //}
+
+        $(document).click(function () {
+            //$('.searchWrap').hide("slow");
+        });
+        /*if($('.bookFlight a').length){	
+        $(".bookFlight a").click(function(event){
+        $(".searchFlightContentWrapNew").slideToggle();
+            event.preventDefault();
+        });
+        }
+        if($('.countryFlag').length){
+        $(".countryFlag").click(function(){
+            $(".langWrap").slideToggle();
+        });
+        }*/
+        //$(".searchWrap").hide();
+        //if ($('.searchIconNew').length) {
+        //    $(".searchIconNew").click(function () {
+        //        $(".searchWrap").slideToggle();
+        //    });
+        //}
+        if ($('.countryFlag').length) {
+            $(".countryFlag").click(function () {
+                if (!$(".langWrap").hasClass("displayNone")) {
+                    $(".langWrap").slideUp("slow");
+                    $(".langWrap").addClass("displayNone");
+                }
+                else {
+                    $(".langWrap").removeClass("displayNone");
+                    $(".langWrap").slideDown("slow");
+                }
+            });
+        }
+        if ($('.searchIconNew').length) {
+            $(".searchIconNew").click(function () {
+                if (!$(".searchNew").hasClass("displayNone")) {
+                    $(".searchWrap").slideUp("slow");
+                    $(".searchNew").addClass("displayNone");
+                }
+                else {
+                    $(".searchNew").removeClass("displayNone");
+                    $(".searchWrap").slideDown("slow");
+                }
+            });
+        }
+
+        /* Book hotel popup 20-06-18 started */
+        if ($('.popBookHotel').length) {
+            $('.popBookHotel').click(function () {
+                $('.popupBookHotel').show();
+                $('.popupBookHotel .popupVideo').show();
+                return false;
+            });
+        }
+
+        $('#nav .MenuLi2 .dropdown li').eq(7).click(function () {
+            $('.popupBookHotel').show();
+            $('.popupBookHotel .popupVideo').show();
+            return false;
+        });
+
+
+        $('.closeVideoPopup, .fadeVideo').click(function () {
+            $('.popupBookHotel').hide();
+            $('.popupBookHotel .fadeWrapVideo').hide();
+            return false;
+        });
+
+        /* Book hotel popup 20-06-18 ended */
+
+
+        /* side booking panel regarding started added */
+
+        $(window).on('resize', function () {
+            if (!$(window).width() < 1025) {
+                $('.home').addClass('desktop');
+            } else {
+                $('.home').removeClass('desktop');
+            }
+        }).trigger('resize');
+
+        if ($('body').hasClass('hindiDoc')) {
+            $('.flightSchedule > h2').text('अपनी उड़ान बुक करें')
+        }
+
+        if ($('body').hasClass('desktop')) {
+            var $flightBox = $('.searchFlightContent'),
+                $slideTabs = $('.slideTabs'),
+                $bookFlight = $('.bookFlight'),
+                $flightSchedule = $('.flightSchedule');
+
+            $flightSchedule.prepend('<a href="#" class="hideBooking">X</a>');
+
+            function hideBooking() {
+                $bookFlight.children().removeClass('active')
+                $flightBox.animate({ 'left': -$flightBox.outerWidth(true) - 200, 'z-index': 1000 }, 400);
+            }
+
+
+            $('.hideBooking').click(function (e) {
+                e.preventDefault();
+                hideBooking();
+            });
+
+            $bookFlight.children().addClass('active');
+
+            //FOR HIDING BOOKING ON BANNER BY Kashish
+            /*
+          var timeout = setTimeout(function () {
+              hideBooking();
+          }, 3000);
+*/
+            $flightBox.mouseover(function () {
+                $(this).css('left', 0);
+                // clearTimeout(timeout);
+            });
+
+            $bookFlight.click(function (e) {
+                e.preventDefault();
+                //$slideTabs.animate({ 'left': -$slideTabs.outerWidth(true) }, 100);
+                var $this = $(this);
+                if (!$this.children().hasClass('active')) {
+                    // clearTimeout(timeout);
+                    $this.children().addClass('active');
+                    $flightBox.animate({ 'left': 0, 'z-index': 998 }, 400);
+                } else {
+                    //  clearTimeout(timeout);
+                    hideBooking();
+                }
+            });
+        }
+
+        var IEbellow9 = !$.support.leadingWhitespace;
+        if (IEbellow9) {
+            $('.slideTabs, .flightSchedule > h2, .hideBooking').hide();
+        }
+        /* side booking panel regarding ended added */
+
+
+    })
+
+
+    if ($(".onLoadPopupClose").length) {
+        $(".onLoadPopupClose, .loadBg").click(function () { $(".onLoadPopup").hide(); return false; });
+    }
+
+
+
+})(jQuery);
+
+/*$('.overlaySlide').hide();
+$('.logoListing li').hover(function(){
+$(this).find('.overlaySlide').stop().show('fast');
+},
+function(){
+$(this).find('.overlaySlide').stop().hide('fast');
+});*/
+
+
+/*$('#nav li.MenuLi2 a, #nav li.MenuLi5 a').click(function(){
+$(this).next('.megamenu').show();
+});*/
+$('#nav li.MenuLi2, #nav li.MenuLi5').hover(function () {
+    $(this).children('.megamenu').show();
+},
+    function () {
+        $(this).children('.megamenu').hide();
+    });
+
+// required dark site popup
+
+//function closeDark(){
+//	$('.darksite').hide();
+//}
+
+//$(this).find('a:hover').css('background-color', '#ee7307');
+//$(this).find('a:hover').css('box-shadow', '0 0 2px #96191D');
+
+
+/*$('#nav li.MenuLi2 .megamenu, #nav li.MenuLi5 .megamenu').mouseout(function(){
+$('#nav li.MenuLi2, #nav li.MenuLi5').find('a').css('background', 'none');
+$('#nav li.MenuLi2, #nav li.MenuLi5').find('a').css('box-shadow', 'none');
+});
+
+$('#nav li.MenuLi2 .megamenu, #nav li.MenuLi5 .megamenu').mouseover(function(){
+$('#nav li.MenuLi2, #nav li.MenuLi5').find('a').css('background', '');
+$('#nav li.MenuLi2, #nav li.MenuLi5').find('a').css('box-shadow', '');
+});
+
+$('#footer a').click(function(){
+$('#nav li').find('a').removeClass('active');						  
+});*/
+
+/*var $divs = $('.container');
+$divs.each(function(index) {
+var $th = $(this);
+setTimeout(function() {
+$th.css("visibility", "visible"); 
+$th.hide();
+$th.fadeIn('fast');		
+}, index * 80);
+});*/
+
+
+if ($('.sidebar.alignLeft').length > 0) {
+    $float_speed = 1500; //milliseconds
+    $float_easing = "easeOutQuint";
+    $menu_fade_speed = 500; //milliseconds
+    $closed_menu_opacity = 0.75;
+
+    $fl_menu = $('.sidebar.alignLeft');
+    $fl_menu_menu = $('.sidebar.alignLeft .leftAcco');
+    $(window).load(function () {
+        menuPosition = $('.sidebar.alignLeft').position().top;
+        FloatMenu();
+    });
+    $(window).scroll(function () {
+        // updated for client demand 23-10-17
+        if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+            $(".sidebar").css({ "margin-top": "-200px" });
+        } else {
+            $(".sidebar").css({ "margin": "20px 0 0 5px" });
+        }
+        FloatMenu();
+    });
+
+    function FloatMenu() {
+        var scrollAmount = $(document).scrollTop();
+        var newPosition = menuPosition + scrollAmount;
+        if ($(window).height() < $fl_menu.height() + $fl_menu_menu.height()) {
+            $fl_menu.css("top", menuPosition);
+        } else {
+            $fl_menu.stop().animate({ top: newPosition }, $float_speed, $float_easing);
+        }
+    }
+};
+

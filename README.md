@@ -1,28 +1,30 @@
-# Flight
+# Air India Project 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+This repository contains the Air India Project, a web application designed to simulate the functionalities of the Air India website. Built with Angular, Bootstrap, and JavaScript, it allows users to register, log in, search for flights, and book tickets seamlessly.
 
-## Development server
+How to Set Up and Run the Project
+### Start the Backend
+To initialize the backend, run the allData.json file on JSON Server. Use the following command:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### To install json-server globally
+`npm install -g json-server`
 
-## Code scaffolding
+Open the root folder(assests) of allData.json file and open cmd on this path then enter the below command.
+### Initialising the JSON File on port 3000 for backend
+`json-server --watch allData.json --port 3000`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Verify in your browser that `https://localhost:3000` port is running with three end points:-
+-flightdata (contains all flight data in json format)
+-users (contains all users data in json format)
+-tickets (contains all tickets data in json format)
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Start the FrontEnd
 
-## Running unit tests
+### To install project dependencies of the project
+`npm install`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### To run the project
+`npm start`
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-"# flight" 
+By default, it will run on `https://localhost:4200`

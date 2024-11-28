@@ -1,0 +1,12 @@
+<svg id="FAQs" xmlns="http://www.w3.org/2000/svg" width="161" height="161" viewBox="0 0 161 161">
+  <g id="Ellipse_21" data-name="Ellipse 21" fill="#fff" stroke="#cfd0d0" stroke-width="5">
+    <circle cx="80.5" cy="80.5" r="80.5" stroke="none"/>
+    <circle cx="80.5" cy="80.5" r="78" fill="none"/>
+  </g>
+  <g id="Group_266" data-name="Group 266" transform="translate(21.978 18.978)">
+    <rect id="Rectangle_67" data-name="Rectangle 67" width="118" height="118" transform="translate(0.023 0.022)" fill="none"/>
+    <circle id="Ellipse_16" data-name="Ellipse 16" cx="43" cy="43" r="43" transform="translate(16.023 16.022)" fill="none" stroke="#cfd0d0" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+    <ellipse id="Ellipse_17" data-name="Ellipse 17" cx="4" cy="4.5" rx="4" ry="4.5" transform="translate(55.023 78.022)" fill="#cfd0d0" stroke="#cfd0d0" stroke-width="1"/>
+    <path id="Path_150" data-name="Path 150" d="M112.772,114.131v-8.583A12.772,12.772,0,1,0,100,92.776" transform="translate(-53.749 -42.874)" fill="none" stroke="#cfd0d0" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+  </g>
+</svg>

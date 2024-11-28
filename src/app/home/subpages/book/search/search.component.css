@@ -1,0 +1,31 @@
+.bg-image{
+  width:99vw;
+  height:14vw;
+  background-image:url("/assets/images/search-image.jpg");
+
+   
+    }
+    h2,h1{
+      text-align: center;
+    }
+
+       ul li{
+      text-decoration: none;
+      list-style-type: none;
+    }
+   
+    .value{
+      width:30vw;
+      margin:auto;
+    }
+    .container{
+display:flex;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+    .btn{
+      margin-left:20vw;
+      background-color:yellowgreen;
+    }

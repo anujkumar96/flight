@@ -1,0 +1,29 @@
+.cards{
+    display: flex;
+    width:75vw;
+    margin:auto;
+    }
+
+.card-text{
+  font-size:1.5vw;
+  line-height:1.8vw;
+  font-weight:bold;
+  font-family:Montserrat, sans-serif;
+  color:#585b5c;
+        background-color: #feefe0;
+    }
+    .card{
+        background-color: #feefe0;
+    }
+    h1{
+        text-align: center;
+        font-size: 3vw;
+        font-family:Montserrat, sans-serif;
+        color:#585b5c;
+        font-weight:bold;
+    }
+    h2{
+        text-align: center;
+        font-family:Montserrat, sans-serif;
+        color:#585b5c;
+    }

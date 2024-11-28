@@ -1,0 +1,46 @@
+
+
+  
+
+    .container{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+    .support{
+        background-image: url("/assets/images/customer-support.jpg");
+         height:11.5vw; 
+         width:48vw;
+     }
+     h3{
+         font-size:1.4vw;
+         color:#c32026;
+     }
+     .fix{
+        position:sticky;
+        top:5vw;
+
+    }
+     .quicklinks{
+         display:flex;
+         flex-direction: column;
+       
+background-color:#c32026;
+height: 16vw;
+color:aliceblue;
+padding:2vw 0 2vw 2vw;
+align-content: flex-end;
+margin-top:5vw;
+border-radius: .2vw;
+     }
+  
+     ul li{
+         text-decoration: none;
+         list-style-type:none;
+     }
+     .main{
+         display: flex;
+         justify-content: space-around;
+         margin:2vw 0 2vw 15vw;
+     }

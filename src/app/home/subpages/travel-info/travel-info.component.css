@@ -1,0 +1,58 @@
+
+.image{
+    background-image: url("/assets/images/travel/travel-information.jpg");
+    height: 13.6vw;
+    width:34vw;
+}
+ul li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container{
+    display: flex;
+      justify-content:center;
+}
+.travel
+{    display: flex;
+    flex-direction: column;
+    font-size:.9vw;
+         color:aliceblue;
+         background-color:#c32026;
+         line-height: 1.6vw;
+         margin:2vw 40vw 0 0;
+         padding: .5vw .4vw .5vw 2vw;
+         border-radius: .4vw;
+         position:fixed;
+         top:11vw;
+         left:14.2vw;
+           }
+.image-heading{
+    margin:5vw 0 1vw 1vw;
+    font-size: 1.6vw;
+}
+.call{
+    display: flex;
+    flex-direction: column;
+    font-size:.9vw;
+         color:aliceblue;
+         background-color:#c32026;
+        
+         margin:7vw 0 0 0;
+         padding: .5vw .2vw .5vw 2vw;
+         border-radius: .4vw;
+}
+
+img{
+    width: 25vw;
+    height:auto;
+}
+.image-container{
+    display:flex;
+    flex-direction:column;
+}
+
+.chip{
+    align-self:center;
+ }
+ 
